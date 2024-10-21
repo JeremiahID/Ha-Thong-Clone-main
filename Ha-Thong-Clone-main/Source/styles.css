@@ -1,0 +1,737 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kenia&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=Nanum+Myeongjo&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button:hover{
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fffdfd;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: #B8B8B8;
+    border-radius: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+#header{
+    height: 9vh;
+    background-color: #B6B6B6;
+    position: static;
+    top: 0px;
+    width: 100%;
+
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.left button, .right button{
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+
+button svg{
+  width: 5vw;
+  height: 5vh;
+  background-color: transparent;
+
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img{
+    width: 70px;
+    height: 55px;
+}
+
+h1 a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Lora;
+    letter-spacing: 4px;
+}
+
+.sectionOne{
+    height: 91vh;
+    width: 100%;
+}
+
+.sectionOne img{
+    object-fit: cover;
+    object-position: center;
+    height: 91vh;
+    width: 100%;
+}
+
+.sectionOneShow{
+    display: none;
+
+}
+
+.sectionTwo{
+    border: 1px solid #B8B8B8;
+}
+
+
+.sectionTwo .Head, .sectionTwoMenu .Head{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E6E6E6 ;
+}
+
+.fall, .date{
+    width: 10%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b8b8b85b;
+    border-top: 0px;
+}
+
+:where(.fall, .date) :is(h2){
+    font-family: Nanum Myeongjo;
+    font-size: 1rem;
+}
+
+.prefall{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    border: 1px solid #E6E6E6  ;
+    border-top: 0px;
+}
+
+.prefall h1{
+    font-family: Nanum Myeongjo;
+}
+.prefall button{
+    width: 10vw;
+    height: 5vh;
+    background-color: transparent;
+    border: 1px solid #E6E6E6 ;
+}
+
+.prefall button:hover{
+    background-color: #E6E6E6 ;
+}
+
+hr{
+    border: 1px solid #E6E6E6 ;
+    width: 60%;
+}
+
+.sectionTwo .secondHead, .sectionTwoMenu .secondHeadMenu{
+    height: 15vh;
+    border-bottom: 1px solid #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secondHead h1{
+    font-family: Nanum Myeongjo;
+    color: #B8B8B8;
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+
+.thirdHead{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    column-gap: 20px;
+}
+
+.spaceOne{
+    grid-column: span 4;
+}
+
+.textContainerOne{
+    grid-column: span 1;
+    grid-row: span 2;
+    border: 1px solid #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+:where(.textContainerOne, .textContainerTwo) :is(p){
+    color: rgba(0, 0, 0, 0.616);
+    font-family: Lora;
+    font-size: 0.8rem;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.spaceTwo{
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+.container-one{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url("../Images/gown-model.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-one:hover{
+    transition: all 1s ease 0s;
+    background-image: url("../Images/gown.jpg");
+    cursor: pointer;   
+    background-position: center;
+}
+
+.container-two{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url("../Images/blouse-model.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-two:hover{
+    transition: all 1s ease 0s;
+    background-image: url("../Images/blouse.png");
+    cursor: pointer;
+    background-position: center;
+}
+
+.container-three{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url("../Images/crop-top-model.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container-three:hover{
+    transition: all 1s ease 0s;
+    background-image: url("../Images/crop-top.jpg");
+    cursor: pointer;
+    background-position: center;
+}
+
+.textContainerTwo{
+    grid-column: span 1;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid #E6E6E6;
+}
+
+:where(.textContainerTwo) :is(button){
+    width: 13vw;
+    height: 5vh;
+    border: 0px;
+    background-color: #E6E6E6;
+    margin-top: 20px;
+}
+
+:where(.textContainerTwo) :is(button:hover){
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+
+.sectionThree{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-space{
+    padding-left: 20vw;
+}
+
+:where(.sectionThree, .sectionThreeMenu) :is(p){
+    color: rgba(0, 0, 0, 0.767);
+    font-family: Lora;
+    font-size: 1rem;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.sectionFour{
+    height: 100vh;
+
+}
+
+.sectionFour .topHead, .sectionFourMenu .topHead{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+:where(.bestSeller) :is(h2){
+    font-family: Lora;
+    font-weight: 100;
+}
+
+.topHead .prefall{
+    width: 50%;
+    border: 0px;
+}
+
+.topHead .prefall hr{
+    border: 1px solid #E6E6E6 ;
+    width: 90%;
+}
+
+.veiwAll button{
+    width: 10vw;
+    height: 5vh;
+    background-color: transparent;
+    border: 1px solid #f0eeee ;
+}
+    
+.veiwAll button:hover{
+    background-color: #E6E6E6 ;
+}
+
+.bestSellerDresses{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 1fr 10px;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+
+.fisrtSpace, .lastSpace{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.bestSellerOne, .bestSellerTwo, .bestSellerThree, .bestSellerFour{
+    grid-column: span 1;
+    grid-row: span 1;
+
+}
+
+
+
+:where(.bestSellerOne, .bestSellerTwo, .bestSellerThree, .bestSellerFour ) :is(.bestSellerText){
+    height: 10vh;
+    border: 1px solid #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestSellerText{
+    font-family: Nanum Myeongjo;
+    font-weight: 100;
+
+}
+
+.bestSellerOneDress, .bestSellerTwoDress, .bestSellerThreeDress, .bestSellerFourDress {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #E6E6E6;
+
+}
+
+.bestSellerOneDress{
+    background-image: url("../Images/best-seller-one.jpg");
+    background-position: center;
+}
+
+.bestSellerOneDress:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/best-seller-one-model.jpg");
+    background-position: center;
+}
+
+.bestSellerTwoDress{
+    background-image: url("../Images/best-seller-two.jpg");
+    background-position: center;
+
+}
+
+.bestSellerTwoDress:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/best-seller-two-model.jpg");
+    background-position: center;
+    
+}
+
+.bestSellerThreeDress{
+    background-image: url("../Images/best-seller-three.jpg");
+    background-position: center;
+
+}
+
+.bestSellerThreeDress:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/best-seller-three-model.jpg");
+    background-position: center;
+
+}
+
+.bestSellerFourDress{
+    background-image: url("../Images/best-seller-four.jpg");
+    background-position: center;
+
+}
+
+.bestSellerFourDress:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/best-seller-four-model.jpg");
+    background-position: center;
+
+}
+
+.sectionFive{
+    margin-top: 8vh;
+    height: 70vh;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+:where(.footerName) :is(h1){
+    font-family: Bodoni Moda;
+    padding: 1.5rem;
+}
+
+:where(.footerLinks) :is(a){
+  padding: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-family:Bodoni Moda;
+  font-weight: 400;
+}
+
+.footerContacts{
+    margin: 2rem;
+    display: flex;
+}
+
+:where(.footerContacts) :is(input){
+   width: 15vw;
+   height: 5vh;
+   background-color: white;
+   font-family: Bodoni Moda;
+   border: 0px;
+   padding: 1rem;
+}
+
+:where(.footerContacts) :is(button){
+    width: 13vw;
+    height: 5vh;
+    background-color: white;
+    font-family: Bodoni Moda;
+    border: 0px;
+    margin-left: 0.2rem;
+}
+
+:where(.footerContacts) :is(button:hover){
+    cursor: pointer;
+    background-color: #E6E6E6;
+}
+
+:where(.footerSocials) :is(a){
+    margin: 0.5rem;
+    text-decoration: none;
+   
+}
+
+:where(a) :is(img){
+   width: 2vw;
+   height: 4vh;
+}
+
+:where(a) :is(img:hover){
+    width: 2vw;
+    height: 4vh;
+    background-color: #f5eeee;
+    
+ }
+
+ :where(.footerNote) :is(p){
+   padding: 1rem;
+   font-family:Bodoni Moda;
+   font-weight: 300;
+   
+}
+
+
+                /*  This is the section fo Java Script clasess*/
+
+/* this is the styling for the cart section of the header*/
+
+#shopBag{
+    display: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    width: 30%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    float: right;
+    position:absolute;
+    top: 9vh;
+    right: 0vw; 
+    transition: all 0.4s ease-in 0s;
+
+}
+
+.mainHead{
+    background-color: #B6B6B6;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+}
+
+:where(.mainHead) :is(h2){
+    color:white;
+    font-family: lora;
+    padding-left: 0.5rem;
+}
+
+:where(.mainHead) :is(button){
+    color:white;
+    border: 0px;
+    background-color: transparent;
+
+}
+
+.mainHead button svg:hover{
+    transition:all 0.6s ease 0s;
+    color:#666464;
+}
+
+/* This is styling for the various section of hamburger menu */
+
+#hamburger{
+    display: none;
+    width: 100%;
+
+}
+
+.sectionOneMenu{
+    height: 91vh;
+    width: 100%;
+}
+
+.sectionOneMenu img{
+    object-fit: cover;
+    object-position: top;
+    height: 91vh;
+    width: 100%;
+}
+
+
+
+.sectionTwoMenu{
+    border: 1px solid #B8B8B8;
+}
+
+.secondHeadMenu h1{
+    font-family: Nanum Myeongjo;
+    color:rgba(180, 48, 114, 0.486);
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+
+.container-one-menu{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url("../Images/menu-frame-one-model.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-one-menu:hover{
+    transition: all 1s ease 0s;
+    background-image: url("../Images/menu-frame-one.jpeg");
+    cursor: pointer;   
+    background-position: center;
+}
+
+.container-two-menu{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url("../Images/menu-frame-two-model.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-two-menu:hover{
+    transition: all 1s ease 0s;
+    background-image: url("../Images/menu-frame-two.jpg");
+    cursor: pointer;
+    background-position: center;
+}
+
+.container-three-menu{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url("../Images/menu-frame-three.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container-three-menu:hover{
+    transition: all 1s ease 0s;
+    background-image: url("../Images/menu-frame-three-model.jpg");
+    cursor: pointer;
+    background-position: center;
+}
+
+.sectionThreeMenu{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sectionFourMenu{
+    height: 100vh;
+
+}
+
+.bestSellerOneDressMenu, .bestSellerTwoDressMenu, .bestSellerThreeDressMenu, .bestSellerFourDressMenu {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #E6E6E6;
+
+}
+
+.bestSellerOneDressMenu{
+    background-image: url("../Images/menu-best-seller-one.jpeg");
+    background-position: center;
+}
+
+.bestSellerOneDressMenu:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/menu-best-seller-one-model.jpg");
+    background-position: center;
+}
+
+
+.bestSellerTwoDressMenu{
+    background-image: url("../Images/menu-best-seller-two.jpeg");
+    background-position: center;
+
+}
+
+.bestSellerTwoDressMenu:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/menu-best-seller-one-model.jpg");
+    background-position: center;
+    
+}
+
+.bestSellerThreeDressMenu{
+    background-image: url("../Images/menu-best-seller-three.jpeg");
+    background-position: center;
+
+}
+
+.bestSellerThreeDressMenu:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/menu-best-seller-three-model.jpg");
+    background-position: center;
+
+}
+
+.bestSellerFourDressMenu{
+    background-image: url("../Images/menu-best-seller-four.jpeg");
+    background-position: center;
+
+}
+
+.bestSellerFourDressMenu:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("../Images/menu-best-seller-four-model.jpg");
+    background-position: center;
+
+}
+
+
+.hide{
+    display: none;
+}
+
+
+
+
