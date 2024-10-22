@@ -88,7 +88,7 @@ function changeBackground(){
     document.body.style.backgroundSize = 'cover';
    
 }
-
+// caaling the function and setting the time frame for the background change.
 setInterval(changeBackground, 5000);
 
 
