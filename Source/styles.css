@@ -19,7 +19,7 @@
  .hero{
     height: 100vh;
     width: 100%;
-    background-image: url('/Images/hero_cover-two.jpg');
+    background-image: url('../Images/hero_cover-two.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
