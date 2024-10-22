@@ -48,11 +48,12 @@
     height: 70vh;
     width: 25vw;
     border: 1px solid #3535357d;
+    display: none;
         
  
   }
 
   .cart-head{
-    background-color: #353535e8;
+    background-color: #353535;
     border: 0;
   }

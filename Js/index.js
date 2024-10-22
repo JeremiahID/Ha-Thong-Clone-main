@@ -93,7 +93,31 @@ function changeBackground(){
 setInterval(changeBackground, 5000);
 
 
-// 
+// GET CART UI TAG
+const Cart =  document.querySelector('#cart-menu');
+const cartConatainer = document.querySelector('.cart-conatianer');
+const closeCart = document.querySelector('#close-cart');
+
+Cart.addEventListener('click', ()=>{
+    console.log('working')
+    //CONDITONAL CART DISPLAY CHECK
+    if(cartConatainer.style.display === 'none'){
+        cartConatainer.style.display = 'block';
+    } else {
+        cartConatainer.style.display = 'none';
+    }
+})
+
+
+closeCart.addEventListener('click', ()=>{
+    console.log('working')
+    //CONDITONAL CART DISPLAY CHECK
+    if(cartConatainer.style.display === 'block'){
+        cartConatainer.style.display = 'none';
+    } else {
+        cartConatainer.style.display = 'block';
+    }
+})
 
 
 
