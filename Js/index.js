@@ -80,16 +80,20 @@
 
 
 // script for background
+const Hero =  document.querySelector('.hero');
 const images = ['/Images/hero_cover.jpg', '/Images/hero-cover-two.jpg'];
 let index = 0;
 function changeBackground(){
     index = (index + 1) % images.length;
-    document.body.style.backgroundImage = `url(${images[index]})`;
-    document.body.style.backgroundSize = 'cover';
+    Hero.style.backgroundImage = `url(${images[index]})`;
+    Hero.style.backgroundSize = 'cover';
    
 }
 // caaling the function and setting the time frame for the background change.
 setInterval(changeBackground, 5000);
+
+
+// 
 
 
 

@@ -14,6 +14,12 @@
 }
 
 
+/* DEFAULT STYLING */
+.text-grey-white{
+    color: #ffffffa4;
+}
+
+
 
 /* this is the hero section */
  .hero{
@@ -21,12 +27,12 @@
     width: 100%;
     background-image: url('../Images/hero_cover-two.jpg');
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out;
+    transition: background-image 3s ease;
 }
 
- /* this is the size for header icon */
+ /* HAEDER ICON */
  .icon-size{
     width: 2.5vw;
     color: #ffffffa4;
@@ -36,3 +42,17 @@
  .logo > a{
     color: #ffffffa4;
  }
+
+  /* CART */
+  .cart-conatianer{
+    height: 70vh;
+    width: 25vw;
+    border: 1px solid #3535357d;
+        
+ 
+  }
+
+  .cart-head{
+    background-color: #353535e8;
+    border: 0;
+  }
