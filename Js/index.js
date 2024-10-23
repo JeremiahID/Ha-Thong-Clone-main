@@ -120,4 +120,15 @@ closeCart.addEventListener('click', ()=>{
 })
 
 
+// CHANGING THE HEADER BACKGROUND COLOR WHILE SCROLLING
+window.addEventListener('scroll', function() {
+    var scroll = window.scrollY; // 
+    var header = document.querySelector('header'); // 
+    
+    if (scroll >= 50) {
+        header.classList.add('black'); // Add the 'black' class
+    } else {
+        header.classList.remove('black'); // Remove the 'black' class
+    }
+});
 

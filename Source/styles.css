@@ -52,6 +52,10 @@
     transition: background-image 3s ease;
 }
 
+.black{
+    background-color: #353535d0;
+}
+
 
  /* HAEDER ICON */
 .icon-size{
@@ -98,4 +102,55 @@
     background-color: #b8b8b8a7;
     color: #ffffffd8;
     border: 0;
+}
+
+ /* THE PREFALL DRESS */
+.prefall-wrapper{
+    height: 90vh;
+}
+
+ .prefall-dress{
+    height: 80vh;
+    
+ }
+
+.text-content{
+    height: 80vh;
+}
+
+
+/* VARIOUS DRESSES */
+.background-default{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all .8s ease 0s;
+}
+
+/* DRESS ONE */
+.dress-one{
+    background-image: url('../Images/gown.jpg');
+}
+
+.dress-one:hover{
+    background-image: url('../Images/gown-model.jpg');
+}
+
+/* DRESS TWO */
+.dress-two{
+    background-image: url('../Images/crop-top.jpg');
+}
+
+.dress-two:hover{
+    background-image: url('../Images/crop-top-model.jpg');
+}
+
+/* DRESS THREE */
+.dress-three{
+    background-image: url('../Images/blouse.png');
+}
+
+.dress-three:hover{
+    background-image: url('../Images/blouse-model.jpg');
 }
