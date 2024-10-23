@@ -1,7 +1,13 @@
+/* DEFAULT STYLING */
+*{
+    overflow-x: hidden;
+}
+
+
 
  /* this is for the webkit scroll */
 ::-webkit-scrollbar{
-    width: 8px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -14,7 +20,8 @@
 }
 
 
-/* DEFAULT STYLING */
+/* PREDEFINE STYLING */
+
 .text-grey-white{
     color: #ffffffa4;
 }
@@ -23,12 +30,21 @@
     background-color:#ffffffa4;
 }
 
+.fs-8{
+    font-size: 1rem !important;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 /* this is the hero section */
- .hero{
+.hero{
     height: 100vh;
-    width: 100%;
     background-image: url('../Images/hero-cover-two.jpg');
     background-position: center;
     /* background-size: cover; */
@@ -37,27 +53,46 @@
 }
 
  /* HAEDER ICON */
- .icon-size{
+.icon-size{
     width: 2.5vw;
     color: #ffffffa4;
     cursor: pointer;
- }
+}
 
- .logo > a{
+.logo > a{
     color: #ffffffa4;
- }
+}
 
   /* CART */
-  .cart-conatianer{
+.cart-conatianer{
     height: 70vh;
     width: 25vw;
     border: 5px solid #353535;
     display: none;
         
- 
-  }
+}
 
-  .cart-head{
+.cart-head{
     background-color: #353535;
     border: 0;
-  }
+}
+
+/* PREFALL */
+.prefall{
+    height: 15vh;
+    
+}
+
+.explore-button{
+    border: 1px solid #B8B8B8;
+    background-color: transparent;
+    text-transform: capitalize;
+    width: 10vw;
+    height: 6vh;
+    text-align: center;
+}
+
+.explore-button:hover{
+    transition: all .8s ease 0s;
+    background-color: #b8b8b8a7;
+}
