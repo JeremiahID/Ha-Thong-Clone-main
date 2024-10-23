@@ -19,13 +19,17 @@
     color: #ffffffa4;
 }
 
+.bg-grey-white{
+    background-color:#ffffffa4;
+}
+
 
 
 /* this is the hero section */
  .hero{
     height: 100vh;
     width: 100%;
-    background-image: url('../Images/hero_cover-two.jpg');
+    background-image: url('../Images/hero-cover-two.jpg');
     background-position: center;
     /* background-size: cover; */
     background-repeat: no-repeat;
@@ -47,7 +51,7 @@
   .cart-conatianer{
     height: 70vh;
     width: 25vw;
-    border: 1px solid #3535357d;
+    border: 5px solid #353535;
     display: none;
         
  

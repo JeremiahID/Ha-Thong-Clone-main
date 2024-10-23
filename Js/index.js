@@ -81,7 +81,7 @@
 
 // script for background
 const Hero =  document.querySelector('.hero');
-const images = ['/Images/hero_cover.jpg', '/Images/hero-cover-two.jpg'];
+const images = ['/Images/hero_cover.jpg', '/Images/hero-cover-two.jpg','/Images/hero-cover-four.jpeg'];
 let index = 0;
 function changeBackground(){
     index = (index + 1) % images.length;
