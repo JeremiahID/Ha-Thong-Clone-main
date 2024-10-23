@@ -52,6 +52,7 @@
     transition: background-image 3s ease;
 }
 
+
  /* HAEDER ICON */
 .icon-size{
     width: 2.5vw;
@@ -95,4 +96,6 @@
 .explore-button:hover{
     transition: all .8s ease 0s;
     background-color: #b8b8b8a7;
+    color: #ffffffd8;
+    border: 0;
 }
