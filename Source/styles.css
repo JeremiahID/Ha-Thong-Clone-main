@@ -237,8 +237,35 @@
 
 /* HOT SALES DRESS */
 .hot-sales-dress{
-    height: 70vh;
+    height: 90vh;
 } 
+
+/* hot sales one */
+.hot-sale-one{
+    background-image: url('../Images/menu-frame-one-model.jpg');
+}
+
+.hot-sale-one:hover{
+    background-image: url('../Images/menu-frame-one.jpeg');
+}
+
+/* hot sales two */
+.hot-sale-two{
+    background-image: url('../Images/menu-frame-two-model.jpg');
+}
+
+.hot-sale-two:hover{
+    background-image: url('../Images/menu-frame-two.jpg');
+}
+
+/* hot sales three */
+.hot-sale-three{
+    background-image: url('../Images/menu-frame-three.jpg');
+}
+
+.hot-sale-three:hover{
+    background-image: url('../Images/menu-frame-three-model.jpg');
+}
 
 
 
