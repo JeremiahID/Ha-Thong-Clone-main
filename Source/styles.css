@@ -156,3 +156,24 @@
 .dress-three:hover{
     background-image: url('../Images/blouse-model.jpg');
 }
+
+/* TEXT CONTENT FOR THE PREFALL DRESS */
+.about{
+    width: 12vw;
+    height: 5vh;
+}
+.about-button {
+    border: 1px solid #5251514e;
+    background-color: #b8b8b8a7;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.about-button:hover{
+    transition: all .8s ease 0s;
+    background-color: transparent;
+    color: #151515;
+}
