@@ -177,3 +177,43 @@
     background-color: transparent;
     color: #151515;
 }
+
+
+
+@media screen and (max-width:580px) {
+      /* CART */
+    .cart-conatianer{
+        height: 50vh;
+        width: 70vw;
+        border: 5px solid #353535;
+        display: none;
+    
+            
+    }
+
+    .cart-head{
+        height: 5.5vh;
+        width: inherit;
+    }
+    #close-cart{
+        padding-right: 4px;
+    }
+
+    /* ICON SIZE */
+    .icon-size{
+        width: 8.5vw;
+        color: #ffffffa4;
+        cursor: pointer;
+    }
+
+    /* THE PREFALL DRESS */
+    .prefall-wrapper{
+        height: 270vh;
+    }
+
+    .prefall-dress{
+        height: 260vh;
+        
+    }
+
+}
