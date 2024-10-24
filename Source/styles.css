@@ -193,6 +193,60 @@
     height: 70vh;
 }
 
+/* BEST SELLER ONE */
+.best-seller-one{
+    background-image: url('../Images/best-seller-one.jpg');
+}
+
+.best-seller-one:hover{
+    background-image: url('../Images/best-seller-one-model.jpg');
+}
+
+/* BEST SELLER TWO */
+.best-seller-two{
+    background-image: url('../Images/best-seller-two.jpg');
+}
+
+.best-seller-two:hover{
+    background-image: url('../Images/best-seller-two-model.jpg');
+}
+
+/* BEST SELLER THREE */
+.best-seller-three{
+    background-image: url('../Images/best-seller-three.jpg');
+}
+
+.best-seller-three:hover{
+    background-image: url('../Images/best-seller-three-model.jpg');
+}
+
+/* BEST SELLER FOUR */
+.best-seller-four{
+    background-image: url('../Images/best-seller-four.jpg');
+}
+
+.best-seller-four:hover{
+    background-image: url('../Images/best-seller-four-model.jpg');
+}
+
+
+/* HOT SALES */
+.hot-sales{ 
+    font-family: Candara light;
+}
+
+/* HOT SALES DRESS */
+.hot-sales-dress{
+    height: 70vh;
+} 
+
+
+
+
+
+
+
+
 @media screen and (max-width:580px) {
       /* CART */
     .cart-conatianer{
