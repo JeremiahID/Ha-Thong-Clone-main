@@ -178,6 +178,12 @@
     color: #151515;
 }
 
+
+/* PAGE TEXT CONTENT */
+.page-text-content{
+    height: 60vh;
+}
+
 /* THE BEST SELLER */
 .best-seller{
     height: 10vh;
