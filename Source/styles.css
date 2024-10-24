@@ -90,7 +90,7 @@
     
 }
 
-.explore-button{
+.explore-button, .view-button{
     border: 1px solid #B8B8B8;
     background-color: transparent;
     text-transform: capitalize;
@@ -99,7 +99,7 @@
     text-align: center;
 }
 
-.explore-button:hover{
+.explore-button:hover, .view-button:hover{
     transition: all .8s ease 0s;
     background-color: #b8b8b8a7;
     color: #ffffffd8;
@@ -178,7 +178,14 @@
     color: #151515;
 }
 
+/* THE BEST SELLER */
+.best-seller{
+    height: 10vh;
+}
 
+.best-seller-dress{
+    height: 70vh;
+}
 
 @media screen and (max-width:580px) {
       /* CART */
