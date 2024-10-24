@@ -31,7 +31,7 @@
 }
 
 .fs-8{
-    font-size: 1rem !important;
+    font-size: .8rem !important;
 }
 
 .flex{
@@ -80,6 +80,8 @@
 .cart-head{
     background-color: #353535;
     border: 0;
+    height: 7vh;
+    width: inherit;
 }
 
 /* PREFALL */
@@ -101,7 +103,7 @@
     transition: all .8s ease 0s;
     background-color: #b8b8b8a7;
     color: #ffffffd8;
-    border: 0;
+    border: 1px solid #3535353b;
 }
 
  /* THE PREFALL DRESS */
