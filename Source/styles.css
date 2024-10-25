@@ -185,10 +185,6 @@
 }
 
 /* THE BEST SELLER */
-.best-seller{
-    height: 10vh;
-}
-
 .best-seller-dress{
     height: 70vh;
 }
@@ -309,5 +305,15 @@
         height: 260vh;
         
     }
+    /* BEST SELLER */
+    .best-seller-dress{
+        height: 280vh;
+    }
+
+    /* HOT SALES DRESS */
+    .hot-sales-dress{
+        height: 270vh;
+    } 
+    
 
 }
