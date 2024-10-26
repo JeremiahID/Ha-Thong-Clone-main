@@ -280,12 +280,22 @@ a{
 
 /* FOOTER */
 .footer{
-    height: 80vh;
+    height: 60vh;
     background-color: #b8b8b8bd;
 }
 
 .footerName{
     word-spacing: 1rem;
+    color: #626060;
+}
+
+.footer-links{
+    color: #3b3939;
+}
+
+.footer-links:hover{
+    text-decoration: overline;
+    color: #626060;
 }
 
 .subscribe{
@@ -309,6 +319,10 @@ a{
 .social-links:hover{
     transition: all .3s ease 0s;
     width: 2.9vw;
+}
+
+.footer-note{
+    color: #626060;
 }
 
 
