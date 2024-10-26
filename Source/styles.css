@@ -22,6 +22,19 @@
 
 /* PREDEFINE STYLING */
 
+a{
+    text-decoration: none;
+    color: #151515;
+}
+
+.ff-family{
+    font-family: Candara;
+}
+
+.ff-family-light{
+    font-family: Candara light;
+}
+
 .text-grey-white{
     color: #ffffffa4;
 }
@@ -265,12 +278,38 @@
 
 
 
-
+/* FOOTER */
 .footer{
     height: 80vh;
     background-color: #b8b8b8bd;
 }
 
+.footerName{
+    word-spacing: 1rem;
+}
+
+.subscribe{
+    border: 0;
+    color: #3535358e;
+}
+
+.footer-email{
+    border: 1px solid #B8B8B8;
+    width: 35vh;
+    outline: 0;
+}
+
+/* Socials */
+.social-links{
+    width: 3vw;
+    margin: 0 .3rem;
+
+}
+
+.social-links:hover{
+    transition: all .3s ease 0s;
+    width: 2.9vw;
+}
 
 
 @media screen and (max-width:580px) {
