@@ -27,6 +27,10 @@ a{
     color: #151515;
 }
 
+.cur{
+    cursor: pointer;
+}
+
 .ff-family{
     font-family: Candara;
 }
@@ -41,6 +45,10 @@ a{
 
 .bg-grey-white{
     background-color:#ffffffa4;
+}
+
+.bg-grey-dark{
+    background-color: #353535;
 }
 
 .fs-8{
@@ -81,7 +89,14 @@ a{
     color: #ffffffa4;
 }
 
-  /* CART */
+/* NAVIGATIONS */
+.navigations{
+    height: 40vh;
+    width: 17vw;
+    display: none;
+}
+
+/* CART */
 .cart-conatianer{
     height: 70vh;
     width: 25vw;

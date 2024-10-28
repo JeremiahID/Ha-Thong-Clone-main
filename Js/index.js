@@ -132,3 +132,5 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// GETTING THE HAMBURGER UI
+const hambuger = document.querySelector('#hambuger-menu');
