@@ -370,6 +370,27 @@ a{
     .hot-sales-dress{
         height: 270vh;
     } 
+
+    /* FOOTER */
+    .footer-links{
+        font-size: .7rem;
+        padding-left:.2rem ;
+    }
+
+    .social-links{
+        width: 6vw;
+        margin: 0 .3rem;
+    
+    }
+    .footer-links:hover{
+        text-decoration: none;
+        
+    }
+
+    .footer-email:focus{
+      font-size: .8rem;
+    }
+
     
 
 }
