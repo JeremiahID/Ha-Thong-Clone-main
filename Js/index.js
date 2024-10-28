@@ -132,5 +132,32 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// GETTING THE HAMBURGER UI
+// GETTING THE HAMBURGER and NAVIGATIONS UI
 const hambuger = document.querySelector('#hambuger-menu');
+const Nav = document.querySelector('.navigations');
+const CloseNav = document.querySelector('#close-nav');
+
+// ADDING EVENT LISTENER TO THE HAMBUGER UI
+hambuger.addEventListener('click', ()=>{
+    if(Nav.style.display === 'none' ){
+        Nav.classList.add('transit');
+        Nav.style.display = 'block';
+       
+    } else {
+        Nav.style.display = 'none';
+    }
+
+});
+
+// ADDING EVENT LISTENER TO THE NAVIGATION UI
+
+CloseNav.addEventListener('click', ()=>{
+    if(Nav.style.display === 'block' ){
+        Nav.classList.add('transit');
+        Nav.style.display = 'none';
+       
+    } else {
+        Nav.style.display = 'block';
+    }
+
+});

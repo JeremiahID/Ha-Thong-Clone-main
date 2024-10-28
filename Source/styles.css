@@ -27,8 +27,8 @@ a{
     color: #151515;
 }
 
-.cur{
-    cursor: pointer;
+.transit{
+    transition: all .5s ease 0s;
 }
 
 .ff-family{
@@ -94,6 +94,7 @@ a{
     height: 40vh;
     width: 17vw;
     display: none;
+    border: 1px solid #353535;
 }
 
 /* CART */
@@ -345,11 +346,16 @@ a{
       /* CART */
     .cart-conatianer{
         height: 50vh;
-        width: 70vw;
+        width: 50vw;
         border: 5px solid #353535;
         display: none;
-    
-            
+    }
+
+    /* NAVIGATIONS */
+    .navigations{
+        height: 59vh;
+        width: 40vw;
+        display: none;
     }
 
     .cart-head{
