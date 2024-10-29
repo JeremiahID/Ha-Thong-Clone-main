@@ -93,7 +93,7 @@ a{
 .navigations{
     height: 40vh;
     width: 17vw;
-    display: none;
+    /* display: none; */
     border: 1px solid #353535;
 }
 
