@@ -1,4 +1,3 @@
-
 // script for background
 const Hero =  document.querySelector('.hero');
 const images = ['/Images/hero_cover.jpg', '/Images/hero-cover-two.jpg','/Images/hero-cover-four.jpeg'];
@@ -81,3 +80,20 @@ CloseNav.addEventListener('click', ()=>{
     }
 
 });
+
+// EMAIL VALIDATION
+const Subscribe = document.querySelector('#subscribe');
+const Email = document.querySelector('#email');
+
+console.log(typeof Email)
+Subscribe.addEventListener('click', ()=>{
+    if(Email.value === ''){
+        alert('email field cannot be empty')
+    } else if(Email.value !== ''){
+        alert('email subscription successful..!')
+        Email.value = '';
+    } else {
+
+    }
+
+})
