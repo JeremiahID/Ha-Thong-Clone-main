@@ -91,10 +91,21 @@ a{
 
 /* NAVIGATIONS */
 .navigations{
-    height: 35vh;
+    height: 34.4vh;
     width: 17vw;
-    /* display: none; */
+    display: none;
     border: 1px solid #353535;
+}
+
+.nav-link-a{
+    font-family: Candara light;
+}
+
+.nav-link-a:hover{
+    transition: all .4s ease-in-out 0s;
+    background-color: grey;
+    color: #e0e0e0;
+    font-family: Candara;
 }
 
 /* CART */
@@ -353,7 +364,7 @@ a{
 
     /* NAVIGATIONS */
     .navigations{
-        height: 33vh;
+        height: 30vh;
         width: 35vw;
         display: none;
     }
@@ -361,6 +372,9 @@ a{
     .cart-head{
         height: 5.5vh;
         width: inherit;
+    }
+    #close-cart{
+        padding-right: 4px;
     }
 
     /* ICON SIZE */
