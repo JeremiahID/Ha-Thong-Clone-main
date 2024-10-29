@@ -91,7 +91,7 @@ a{
 
 /* NAVIGATIONS */
 .navigations{
-    height: 40vh;
+    height: 35vh;
     width: 17vw;
     /* display: none; */
     border: 1px solid #353535;
@@ -353,17 +353,14 @@ a{
 
     /* NAVIGATIONS */
     .navigations{
-        height: 59vh;
-        width: 40vw;
+        height: 33vh;
+        width: 35vw;
         display: none;
     }
 
     .cart-head{
         height: 5.5vh;
         width: inherit;
-    }
-    #close-cart{
-        padding-right: 4px;
     }
 
     /* ICON SIZE */
