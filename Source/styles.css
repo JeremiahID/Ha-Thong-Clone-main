@@ -401,8 +401,14 @@ a{
     .social-links{
         width: 6vw;
         margin: 0 .3rem;
-    
     }
+
+    .social-links:hover{
+        width: 6vw;
+        
+    }
+
+
     .footer-links:hover{
         text-decoration: none;
         
