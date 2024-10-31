@@ -17,7 +17,8 @@ const Cart =  document.querySelector('#cart-menu');
 const cartConatainer = document.querySelector('.cart-conatianer');
 const closeCart = document.querySelector('#close-cart');
 
-Cart.addEventListener('click', ()=>{
+Cart.addEventListener('click', (event)=>{
+    event.preventDefault();
     console.log('working')
     //CONDITONAL CART DISPLAY CHECK
     if(cartConatainer.style.display === 'none'){
