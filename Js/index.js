@@ -100,7 +100,7 @@ const Email = document.querySelector('#email');
 
 Subscribe.addEventListener('click', ()=>{
     if(Email.value === ''){
-        alert('email field cannot be empty')
+        alert('email field cannot be empty');
     } else if(Email.value !== ''){
         if (validateEmail(Email.value)) {
             alert('email subscription successful..!')
