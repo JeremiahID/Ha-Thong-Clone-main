@@ -25,6 +25,21 @@ shoppingCart.addEventListener('click' , () => {
 })
 
 
+function validateEmail(email) {
+  // Regular expression for basic email validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email); // Returns true if valid, false otherwise
+}
+
+// Usage example
+const email = "example@example.com";
+if (validateEmail(email)) {
+  console.log("Valid email!");
+} else {
+  console.log("Invalid email format.");
+}
+
+
 
 
 

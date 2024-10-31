@@ -82,19 +82,38 @@ CloseNav.addEventListener('click', ()=>{
 
 });
 
+
+
+// VALIDATING THE USER EMAIL
+function validateEmail(email) {
+
+    // Regular expression for basic email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email); // Returns true if valid, false otherwise
+}
+
 // EMAIL VALIDATION
 const Subscribe = document.querySelector('#subscribe');
 const Email = document.querySelector('#email');
 
-console.log(typeof Email)
+
+
 Subscribe.addEventListener('click', ()=>{
     if(Email.value === ''){
         alert('email field cannot be empty')
     } else if(Email.value !== ''){
-        alert('email subscription successful..!')
-        Email.value = '';
+        if (validateEmail(Email.value)) {
+            alert('email subscription successful..!')
+            Email.value = '';
+        } else {
+            alert("Invalid email");
+            
+        }
+    
+
     } else {
 
     }
+
 
 })
