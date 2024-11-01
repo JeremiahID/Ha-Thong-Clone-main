@@ -90,10 +90,10 @@ a{
 
 /* NAVIGATIONS */
 .navigations{
-    height: 34.4vh;
+    height: 34.2vh;
     width: 17vw;
     display: none;
-    border: 1px solid #353535;
+    /* border: 1px solid #353535; */
 }
 
 .nav-link-a{
