@@ -43,6 +43,10 @@ a{
     color: #ffffffa4;
 }
 
+.text-grey-dark{
+    color:  #353535b0;
+}
+
 .bg-grey-white{
     background-color:#ffffffa4;
 }
@@ -93,6 +97,7 @@ a{
     height: 34.2vh;
     width: 17vw;
     display: none;
+    z-index: 999;
     /* border: 1px solid #353535; */
 }
 
@@ -149,8 +154,20 @@ a{
 .prefall-wrapper{
     height: 90vh;
 }
+.favorite{
+    width: 2vw;
+    color: #797676;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    
+}
 
- .prefall-dress{
+.favorite:hover{
+
+}
+
+.prefall-dress{
     height: 80vh;
     
  }
@@ -305,7 +322,9 @@ a{
 
 /* COLLECTIONS PAGE STYLING */
 
-
+/* .collection-header{
+    height: 15vh;
+} */
 
 
 /* FOOTER */

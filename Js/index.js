@@ -97,7 +97,7 @@ const Subscribe = document.querySelector('#subscribe');
 const Email = document.querySelector('#email');
 
 
-
+// EVENT LISTENER FOR THE SUSCRIBE BUTTON
 Subscribe.addEventListener('click', ()=>{
     if(Email.value === ''){
         alert('email field cannot be empty');
