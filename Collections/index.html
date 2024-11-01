@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="../Source/bootstrap.css">
+    <link rel="stylesheet" href="../Source/styles.css">
+</head>
+<body>
+    <!-- NAVIGATIONS -->
+    <div class="navigations position-absolute top-0 start-0 bg-grey-white z-1">
+        <div class="d-flex justify-content-end px-1 py-1 bg-grey-dark">
+            <svg id="close-nav" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="text-grey-white icon-size"
+            viewBox="0 0 16 16">
+             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+        </svg>
+      </div>
+
+      <div class="nav-links d-flex flex-column text-center">
+        <a href="../" class="p-2  nav-link-a">
+            Home
+        </a>
+        <a href="/Collections/" class="p-2  nav-link-a">
+            Collections
+        </a>
+        <a href="" class="p-2  nav-link-a">
+            Favorites &#128151
+        </a>
+        <a href="" class="p-2  nav-link-a">
+            About
+        </a>
+      </div>
+
+    </div>
+
+    <!-- THE HERO CONTAINER -->
+    <div class="hero">
+        <header class="header d-flex align-content-center justify-content-between position-fixed w-100 ">
+
+            <!-- this is an hambuger menu icon -->
+            <div class="hambuger icon-size m-2" id="hambuger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </div>
+
+            <!-- this is the logo -->
+            <div class="logo fs-4 mt-2">
+                <a  href="/" target="_self" class="text-decoration-none"> HA THONG </a>
+            </div>
+
+            <!-- this is the cart menu icon -->
+            <div class="cartMenu icon-size m-2 " id="cart-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+
+            </div>
+
+
+
+
+        </header>
+         
+    </div>
+
+    <!-- COLLECTIONS HEADER -->
+    <div class="">
+        <p class="">COLLECTIONS</p>
+    </div>
+
+    <!-- COLLECTIONS -->
+     <div class="collections ">
+
+
+     </div>
+
+    <!-- THE CART CONTAINER -->
+    <div class=" cart-conatianer position-fixed top-0 end-0  bg-grey-white">
+        
+        <div class="cart-head d-flex justify-content-between align-items-start">
+            <p class=" fs-6 text-grey-white px-2 " > Cart Summary </p>
+            <svg class="icon-size mx-1" id="close-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+
+    </div>
+
+
+
+
+    
+
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- footer wrapper -->
+        <div class="footer d-flex flex-column align-items-center justify-content-center">
+            <!-- FOOTER LOGO NAME -->
+            <p class="footerName fs-3 ff-family "> HA THONG </p>
+
+            <!-- FOOTER LINKS -->
+            <div class=" ">
+                <a href="http://" target="_blank" class="ff-family-light px-sm-1 footer-links ">All Products</a>
+                <a href="http://" target="_blank" class="ff-family-light px-sm-1 footer-links "> Collections</a>
+                <a href="http://" target="_blank" class="ff-family-light px-sm-1 footer-links ">About</a>
+                <a href="http://" target="_blank" class="ff-family-light px-sm-1 footer-links ">FAQs</a>
+                <a href="http://" target="_blank" class="ff-family-light px-sm-1 footer-links ">Hiring</a>
+                <a href="http://" target="_blank" class="ff-family-light px-sm-1 footer-links ">Contact</a>
+            </div>
+
+            <!-- FOOTER EMAIL NEWSLETTER -->
+            <div class="news-letter d-flex gap-1 my-5">
+                <input type="email" name="email" id="email" placeholder="Email" required class="footer-email px-1 ff-family">
+                <button class="subscribe" id="subscribe"> Subscribe</button>
+            </div>
+
+            <!-- FOOTER SOCIALS -->
+            <div class="footerSocials">
+                <!-- Instagram -->
+                <a href="http://" target="_self" >
+                    <img src="./Images/instagram.png" alt="" srcset="" class="social-links ">
+                </a>
+
+                <!-- Facebook -->
+                <a href="http://" target="_self">
+                    <img src="./Images/facebook.png" alt="" srcset="" class="social-links">
+                </a>
+
+                <!-- Email -->
+                <a href="http://" target="_self">
+                    <img src="./Images/Email.png" alt="" srcset="" class="social-links">
+                </a>
+            </div>
+
+            <!-- FOOTER NOTES -->
+            <p class="py-2 footer-note"> &copy;  2024 Ha Thong. All right reserved.  </p>
+
+
+
+        </div>
+    </footer>
+
+
+    <!-- <script src="./Js/jquery.min.js"></script>
+    <script src="./Js/bootstrap.js"></script> -->
+    <script src="../Js/index.js"></script>
+</body>
+</html>
