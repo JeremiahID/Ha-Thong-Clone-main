@@ -97,7 +97,6 @@ a{
     height: 34.2vh;
     width: 17vw;
     display: none;
-    z-index: 999;
     /* border: 1px solid #353535; */
 }
 
@@ -411,6 +410,10 @@ a{
         height: 270vh;
     }
 
+    .favorite{
+        width: 8vw;
+        
+    }
     .prefall-dress{
         height: 260vh;
         
