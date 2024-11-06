@@ -155,12 +155,14 @@ a{
 }
 
 
+
 .favorite{
     width: 2vw;
     color: #797676;
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 2rem;
+    right: 2rem;
+    color: plum;
     
 }
 
