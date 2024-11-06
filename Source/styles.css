@@ -113,18 +113,38 @@ a{
 
 /* CART */
 .cart-conatianer{
-    height: 70vh;
+    min-height: 70vh;
     width: 25vw;
-    border: 5px solid #353535;
-    display: none;
-        
+    border: 3px solid  #151515e7;
+    display: none;   
+    background-color: #151515e7;
 }
 
 .cart-head{
-    background-color: #353535;
+    background-color: #151515e7;
     border: 0;
     height: 7vh;
     width: inherit;
+}
+
+.check-out{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    
+}
+
+.item-one{
+    background-color: whitesmoke;
+    height: 10vh;
+    width: 100%;
+    margin: .5rem 0rem;
+}
+
+.btn-check-out {
+    width: inherit;
+    margin: 0rem 0rem;
 }
 
 /* PREFALL */
@@ -162,7 +182,6 @@ a{
     position: absolute;
     top: 2rem;
     right: 2rem;
-    color: plum;
     
 }
 
