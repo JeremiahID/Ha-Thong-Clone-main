@@ -180,9 +180,19 @@ a{
     width: 2vw;
     color: #797676;
     position: absolute;
+    top: 0rem;
+    right: 0rem;
+    
+}
+
+.svg{
+    width: 2.5vw;
+    height: 5vh;
+    background-color: red;
+    position: absolute;
     top: 2rem;
     right: 2rem;
-    
+
 }
 
 
