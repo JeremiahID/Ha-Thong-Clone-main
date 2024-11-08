@@ -119,10 +119,11 @@ a{
 
 /* CART */
 .cart-conatianer{
-    width: 25vw;
+    width: 35vw;
     border: 3px solid  #151515e7;
     display: block;   
     background-color: #151515e7;
+    
 }
 
 .cart-head{
@@ -139,9 +140,9 @@ a{
 
 .item-one{
     background-color: whitesmoke;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
-    margin: .5rem 0rem;
+    /* margin: .5rem 0rem; */
 }
 
 .cart-items-size{
@@ -163,6 +164,10 @@ a{
     width: 2vw;
     color: #080808a4;
     cursor: pointer;
+}
+
+.items-icon-Qty{
+    height: inherit;
 }
 
 
