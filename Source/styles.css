@@ -69,7 +69,7 @@ a{
 /* this is the hero section */
 .hero{
     height: 100vh;
-    background-image: url('/Images/hero-cover-two.jpg');
+    background-image: url('../Images/hero-cover-two.jpg');
     background-position: center;
     /* background-size: cover; */
     background-repeat: no-repeat;
