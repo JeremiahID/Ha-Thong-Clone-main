@@ -121,7 +121,7 @@ a{
 .cart-conatianer{
     width: 30vw;
     border: 3px solid  #151515e7;
-    display: block;   
+    display: none;   
     background-color: #ffffff;
     
 }
