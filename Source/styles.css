@@ -140,7 +140,7 @@ a{
 
 .cart-content{
     width: 100%;
-    background-color: #151515;
+    background-color: #ffffff;
 }
 
 .cart-items{
@@ -196,10 +196,6 @@ a{
     background-color: #151515;
 }
 
-#Qty{
-    padding-top: 1rem;
-    background-color: red;
-}
 
 
 
