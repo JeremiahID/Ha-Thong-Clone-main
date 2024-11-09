@@ -180,6 +180,11 @@ a{
     width: 100%;
     height: 70%;
 }
+.close-icon-x{
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+}
 
 .add-remove{
     width: 90%;
@@ -473,10 +478,15 @@ a{
 @media screen and (max-width:580px) {
       /* CART */
     .cart-conatianer{
-        height: 50vh;
-        width: 50vw;
+        width: 100%;
         border: 5px solid #353535;
         display: none;
+    }
+
+    .items-icon-size{
+        width: 4vw;
+        color: #080808a4;
+        cursor: pointer;
     }
 
     /* NAVIGATIONS */
