@@ -146,9 +146,15 @@ a{
 .cart-items{
     background-color: #ffffff;
     height: 15vh;
-    width: 98%;
-    /* margin: .5rem 0rem; */
+    width: 96%;
 }
+
+.cart-items:hover{
+    transition: all .5s ease-in-out 0s;
+    box-shadow: 1px 1px 5px 2px #151515;
+}
+
+
 
 .cart-items-image{
     width: 20%;
@@ -172,15 +178,17 @@ a{
 
 .close-icon{
     width: 100%;
-    height: 75%;
+    height: 70%;
 }
 
 .add-remove{
-    width: 100%;
-    height: 25%;
+    width: 90%;
+    height: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: .2rem ;
+
 }
 
 .items-icon-size{
