@@ -118,11 +118,29 @@ a{
 }
 
 /* CART */
+
+/* Animation for showing the cart */
+.show-cart {
+    transform: translateX(0);
+    opacity: 1;
+    display: block;
+}
+
+/* Animation for hiding the cart */
+.hide-cart {
+    transform: translateX(100%);
+    opacity: 0;
+    display: none;
+}
+/* cart container */
 .cart-conatianer{
     width: 30vw;
     border: 3px solid  #151515e7;
     display: none;   
     background-color: #ffffff;
+    transform: translateX(100%); 
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     
 }
 
