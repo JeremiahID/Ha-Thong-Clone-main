@@ -13,38 +13,32 @@ changeBackground();
 setInterval(changeBackground, 5000);
 
 
+
+
+
 // GET CART UI TAG
 const Cart =  document.querySelector('#cart-menu');
 const cartContainer = document.querySelector('.cart-conatianer');
 const closeCart = document.querySelector('#close-cart');
 
-Cart.addEventListener('click', (event)=>{
-    // event.preventDefault();
-    console.log('working')
-    //CONDITONAL CART DISPLAY CHECK
-    if(cartContainer.style.display === 'none'){
-        cartContainer.style.display = 'block';
-        cartContainer.style.opacity = '1';
-        cartContainer.style.transform = 'translateX(0)';
-    } else {
-        cartContainer.style.display = 'none';
-    }
+//hiding the cart menu on laod
+window.addEventListener('load', function(){
+    cartContainer.classList.add('hide-cart');
+});
+
+Cart.addEventListener('click', ()=>{
+    if(cartContainer.style.display = 'block'){
+        cartContainer.classList.remove('hide-cart');
+        cartContainer.classList.add('show-cart');
     
+    } 
 })
 
-
 closeCart.addEventListener('click', ()=>{
-    console.log('working')
-    //CONDITONAL CART DISPLAY CHECK
-    if(cartContainer.style.display === 'block'){
-        cartContainer.style.display = 'none';
-    } else {
-        cartContainer.style.display = 'block';
-    }
-
-    // Toggle the 'hide-cart' class
-    // cartContainer.classList.add('hide-cart');
-    // cartContainer.classList.remove('show-cart');
+    if(cartContainer.style.display = 'block'){
+        cartContainer.classList.remove('show-cart');
+        cartContainer.classList.add('hide-cart');
+    } 
 })
 
 
@@ -59,6 +53,8 @@ window.addEventListener('scroll', function() {
         header.classList.remove('black'); // Remove the 'black' class
     }
 });
+
+
 
 // GETTING THE HAMBURGER and NAVIGATIONS UI
 const hambuger = document.querySelector('#hambuger-menu');
@@ -94,7 +90,6 @@ CloseNav.addEventListener('click', ()=>{
 
 // VALIDATING THE USER EMAIL
 function validateEmail(email) {
-
     // Regular expression for basic email validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email); // Returns true if valid, false otherwise
@@ -118,9 +113,7 @@ Subscribe.addEventListener('click', ()=>{
             
         }
 
-    } else {
-
-    }
+    } 
 
 });
 
