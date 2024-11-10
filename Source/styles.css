@@ -153,7 +153,7 @@ a{
 .cart-conatianer{
     width: 30vw;
     height: 100%;
-    border: 3px solid  #151515e7;
+    /* border: 3px solid  #151515e7; */
     position: fixed;
     display: block;
     top: 0;
@@ -161,26 +161,28 @@ a{
     background-color: #ffffff;
     transition: transform 0.6s ease , opacity 0.6s ease-in ;
     z-index: 9999;
-    box-sizing: border-box;
+    font-family: candara;
 }
 
+/* cart head */
 
 .cart-head{
-    background-color: #151515e7;
     border: 0;
     max-height: 8%;
     width: 100%;
+    box-shadow: 1px 1px 2px 1px #15151567;
 }
 
-.check-out{
-    width: 100%;
-    max-height: 12%;
-    
+#close-cart:hover{
+    transition: all .5s ease 0s;
+    box-shadow: 1px 1px 2px 1px #15151567;
 }
 
+
+/* cart content */
 .cart-content-wrapper{
     width: 100%;
-    max-height: 80%;
+    max-height: 75%;
     overflow-y: scroll;
     box-sizing: border-box;  
     scroll-behavior: smooth;
@@ -261,12 +263,19 @@ a{
     background-color: #151515;
 }
 
+/* Check out button */
 
+.check-out{
+    width: 100%;
+    max-height: 17%;
+    box-shadow: -1px -1px 2px 1px #15151567;
+    
+}
 
-
-.btn-check-out {
-    width: inherit;
+.btn-check-out, .subtotal {
+    width: 90%;
     height: 7vh;
+    font-family: candara ;
     
 }
 

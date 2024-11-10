@@ -73,14 +73,16 @@
 
     <!-- THE CART CONTAINER -->
     <div class=" cart-conatianer bg-grey-white ">
-        
+
+        <!-- CART HAEDER -->
         <div class="cart-head d-flex justify-content-between align-items-start">
-            <p class=" fs-6 text-grey-white px-2 " > Cart Summary </p>
-            <svg class="icon-size mx-1" id="close-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <p class=" fs-6 text-grey-dark px-2 " > Cart Summary </p>
+            <svg class="icon-size mx-1 text-black-50 " id="close-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
         </div>
 
+        <!-- CART CONTENT WRAPPER-->
         <div class="cart-content-wrapper">
             <div class="cart-content d-flex justify-content-center align-items-center flex-column">
                 <!-- Item One -->
@@ -464,7 +466,11 @@
         </div>
 
         <!-- CHECK OUT -->
-        <div class="check-out position-fixed bottom-0 flex">
+        <div class="check-out position-fixed bottom-0 flex flex-column">
+            <div class="subtotal d-flex justify-content-between align-items-center ">
+                <p class="fw-bold fs-8">Subtotal<span class="fw-lighter">(0 items)</span></p>
+                <p class="fs-8"> $1200</p>
+            </div>
             <button class="btn-check-out border-0 m-2 text-white bg-grey-dark rounded-2 text-capitalize fs-6">continue to checkout</button>
         </div>
     </div>
