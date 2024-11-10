@@ -165,84 +165,28 @@ cartItems.forEach(item => {
     const quantityElement = item.querySelector('.Qty');
     const addQuantity = item.querySelector('.add-qty');
     const subQuantity = item.querySelector('.sub-qty');
+    const Price = item.querySelector('.price');
     let totalQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
+    let totalPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing quantity
 
     // Event listener for adding quantity
     addQuantity.addEventListener('click', () => {
         totalQty += 1;
         quantityElement.innerHTML = totalQty;
+        totalPrice += 350;
+        Price.innerHTML =` $${totalPrice}`;
     });
 
     // Event listener for subtracting quantity
     subQuantity.addEventListener('click', () => {
         if (totalQty > 0) {
             totalQty -= 1;
+            totalPrice -= 350;
         }
         quantityElement.innerHTML = totalQty;
+        Price.innerHTML =` $${totalPrice}`;
     });
 });
-
-
-
-/*
-const Quantity = document.getElementById('Qty');
-const addQuantity = document.getElementById('add-qty');
-const subQuantity = document.getElementById('sub-qty');
-var sumQty = 0;
-
-//seeting the event listener for add quantity
-addQuantity.addEventListener('click', ()=>{
-
-    sumQty += 1;
-    Quantity.innerHTML = sumQty;
-
-});
-
-//seeting the event listener for sub quantity
-subQuantity.addEventListener('click', ()=>{
-
-    if(Quantity.innerHTML >= 1 ){
-        sumQty -= 1;
-        Quantity.innerHTML = sumQty;
- 
-    } else {
-        Quantity.innerHTML = 0;
-    }
-    
-    console.log(sumQty) 
-});
-
-
-
-
-// Select all cart items
-const cartItems = document.querySelectorAll('.cart-item');
-
-cartItems.forEach(item => {
-    // Get the quantity element, add button, and subtract button for each item
-    const quantityElement = item.querySelector('.Qty');
-    const addQuantity = item.querySelector('.add-qty');
-    const subQuantity = item.querySelector('.sub-qty');
-    let sumQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
-
-    // Event listener for adding quantity
-    addQuantity.addEventListener('click', () => {
-        sumQty += 1;
-        quantityElement.innerHTML = sumQty;
-    });
-
-    // Event listener for subtracting quantity
-    subQuantity.addEventListener('click', () => {
-        if (sumQty > 0) {
-            sumQty -= 1;
-        }
-        quantityElement.innerHTML = sumQty;
-    });
-});
-
-
-*/
-
 
 
 
