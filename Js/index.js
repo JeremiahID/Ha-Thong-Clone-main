@@ -1,3 +1,5 @@
+
+
 // script for background
 const Hero =  document.querySelector('.hero');
 const images = ['/Images/hero-cover.jpg', '/Images/hero-cover-two.jpg','/Images/hero-cover-four.jpeg','/Images/hero-cover-six.jpeg'];
