@@ -1,6 +1,7 @@
 /* DEFAULT STYLING */
 *{
     overflow-x: hidden;
+    transition: all .5s ease 0s;
 }
 
 
