@@ -1,5 +1,3 @@
-
-
 // script for background
 const Hero =  document.querySelector('.hero');
 const images = ['/Images/hero-cover.jpg', '/Images/hero-cover-two.jpg','/Images/hero-cover-four.jpeg','/Images/hero-cover-six.jpeg'];
@@ -155,12 +153,95 @@ function Favorite(svgElement){
 
 
 
+//  ADD AND SUB IN QUANTITY
+
+//selecting all cart items
+const cartItems = document.querySelectorAll('.cart-items');
+
+//Looping throught each cart  items
+cartItems.forEach(item => {
+    console.log('test')
+    // Get the quantity element, add button, and subtract button for each item
+    const quantityElement = item.querySelector('.Qty');
+    const addQuantity = item.querySelector('.add-qty');
+    const subQuantity = item.querySelector('.sub-qty');
+    let totalQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
+
+    // Event listener for adding quantity
+    addQuantity.addEventListener('click', () => {
+        totalQty += 1;
+        quantityElement.innerHTML = totalQty;
+    });
+
+    // Event listener for subtracting quantity
+    subQuantity.addEventListener('click', () => {
+        if (totalQty > 0) {
+            totalQty -= 1;
+        }
+        quantityElement.innerHTML = totalQty;
+    });
+});
+
+
+
+/*
+const Quantity = document.getElementById('Qty');
+const addQuantity = document.getElementById('add-qty');
+const subQuantity = document.getElementById('sub-qty');
+var sumQty = 0;
+
+//seeting the event listener for add quantity
+addQuantity.addEventListener('click', ()=>{
+
+    sumQty += 1;
+    Quantity.innerHTML = sumQty;
+
+});
+
+//seeting the event listener for sub quantity
+subQuantity.addEventListener('click', ()=>{
+
+    if(Quantity.innerHTML >= 1 ){
+        sumQty -= 1;
+        Quantity.innerHTML = sumQty;
+ 
+    } else {
+        Quantity.innerHTML = 0;
+    }
+    
+    console.log(sumQty) 
+});
 
 
 
 
+// Select all cart items
+const cartItems = document.querySelectorAll('.cart-item');
+
+cartItems.forEach(item => {
+    // Get the quantity element, add button, and subtract button for each item
+    const quantityElement = item.querySelector('.Qty');
+    const addQuantity = item.querySelector('.add-qty');
+    const subQuantity = item.querySelector('.sub-qty');
+    let sumQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
+
+    // Event listener for adding quantity
+    addQuantity.addEventListener('click', () => {
+        sumQty += 1;
+        quantityElement.innerHTML = sumQty;
+    });
+
+    // Event listener for subtracting quantity
+    subQuantity.addEventListener('click', () => {
+        if (sumQty > 0) {
+            sumQty -= 1;
+        }
+        quantityElement.innerHTML = sumQty;
+    });
+});
 
 
+*/
 
 
 
