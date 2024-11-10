@@ -14,8 +14,6 @@ setInterval(changeBackground, 5000);
 
 
 
-
-
 // GET CART UI TAG
 const Cart =  document.querySelector('#cart-menu');
 const cartContainer = document.querySelector('.cart-conatianer');
@@ -61,28 +59,30 @@ const hambuger = document.querySelector('#hambuger-menu');
 const Nav = document.querySelector('.navigations');
 const CloseNav = document.querySelector('#close-nav');
 
+//hiding the navigation menu on laod
+window.addEventListener('load', function(){
+    Nav.classList.add('hide-nav');
+});
+
 // ADDING EVENT LISTENER TO THE HAMBUGER UI
 hambuger.addEventListener('click', ()=>{
-    if(Nav.style.display === 'none' ){
-        Nav.classList.add('transit');
-        Nav.style.display = 'block';
-       
-    } else {
-        Nav.style.display = 'none';
-    }
+    console.log('open')
+    //conditional check to open the nav
+    if(Nav.style.display = 'block'){
+        Nav.classList.remove('hide-nav');
+        Nav.classList.add('show-nav'); 
+    } 
 
 });
 
 // ADDING EVENT LISTENER TO THE NAVIGATION UI
 
 CloseNav.addEventListener('click', ()=>{
-    if(Nav.style.display === 'block' ){
-        Nav.classList.add('transit');
-        Nav.style.display = 'none';
-       
-    } else {
-        Nav.style.display = 'block';
-    }
+    //conditional check to close the nav
+    if(Nav.style.display = 'block'){
+        Nav.classList.remove('show-nav');
+        Nav.classList.add('hide-nav'); 
+    } 
 
 });
 
