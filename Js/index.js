@@ -160,7 +160,6 @@ const cartItems = document.querySelectorAll('.cart-items');
 
 //Looping throught each cart  items
 cartItems.forEach(item => {
-    console.log('test')
     // Get the quantity element, add button, and subtract button for each item
     const quantityElement = item.querySelector('.Qty');
     const addQuantity = item.querySelector('.add-qty');
