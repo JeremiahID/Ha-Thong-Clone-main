@@ -2,7 +2,7 @@
 *{
     overflow-x: hidden;
     transition: all .5s ease 0s;
-}
+} 
 
  /* this is for the webkit scroll */
 ::-webkit-scrollbar{
@@ -127,6 +127,11 @@ a{
 
 .nav-link-a:hover{
     transition: all .4s ease-in-out 0s;
+    background-color: grey;
+    color: #e0e0e0;
+    font-family: Candara;
+}
+.nav-link-active{
     background-color: grey;
     color: #e0e0e0;
     font-family: Candara;
