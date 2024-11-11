@@ -4,8 +4,6 @@
     transition: all .5s ease 0s;
 }
 
-
-
  /* this is for the webkit scroll */
 ::-webkit-scrollbar{
     width: 5px;
