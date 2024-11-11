@@ -156,7 +156,8 @@ function Favorite(svgElement){
 //  ADD AND SUB IN QUANTITY
 
 //selecting all cart items
-const cartItems = document.querySelectorAll('.cart-items');
+const cartItems = document.querySelectorAll('.cart-items'); 
+const checkOutPrice = document.getElementById('check-out-price');
 
 //Looping throught each cart  items
 cartItems.forEach(item => {
@@ -165,30 +166,43 @@ cartItems.forEach(item => {
     const addQuantity = item.querySelector('.add-qty');
     const subQuantity = item.querySelector('.sub-qty');
     const Price = item.querySelector('.price');
-    let totalQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
-    let totalPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing quantity
+    let itemQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
+    let itemPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing quantity
 
     // Event listener for adding quantity
     addQuantity.addEventListener('click', () => {
-        totalQty += 1;
-        quantityElement.innerHTML = totalQty;
-        totalPrice += 350;
-        Price.innerHTML =` $${totalPrice}`;
+        itemQty += 1;
+        quantityElement.innerHTML = itemQty;
+        itemPrice += 350;
+        Price.innerHTML =` $${itemPrice}`;
+        calculateTotal();
     });
 
     // Event listener for subtracting quantity
     subQuantity.addEventListener('click', () => {
-        if (totalQty > 0) {
-            totalQty -= 1;
-            totalPrice -= 350;
+        if (itemQty > 0) {
+            itemQty -= 1;
+            itemPrice -= 350;
         }
-        quantityElement.innerHTML = totalQty;
-        Price.innerHTML =` $${totalPrice}`;
+        quantityElement.innerHTML = itemQty;
+        Price.innerHTML =` $${itemPrice}`;
+        calculateTotal();
     });
 });
 
 
+// Function to calculate the total price of all cart items
+function calculateTotal() {
+    let total = 0;
+    cartItems.forEach(item => {
+        const Price = item.querySelector('.price');
+        let itemPrice = parseInt(Price.innerHTML.replace('$', '')) || 0;
+        total += itemPrice;
+    });
+    checkOutPrice.innerHTML = `$${total}`;
+}
 
+calculateTotal();
 
 
 
