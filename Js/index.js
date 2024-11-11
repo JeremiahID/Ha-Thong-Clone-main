@@ -175,7 +175,7 @@ cartItems.forEach(item => {
         quantityElement.innerHTML = itemQty;
         itemPrice += 350;
         Price.innerHTML =` $${itemPrice}`;
-        calculateTotal();
+        calculateTotal(); // Recalculate total after updating item quantity
     });
 
     // Event listener for subtracting quantity
@@ -186,7 +186,7 @@ cartItems.forEach(item => {
         }
         quantityElement.innerHTML = itemQty;
         Price.innerHTML =` $${itemPrice}`;
-        calculateTotal();
+        calculateTotal(); // Recalculate total after updating item quantity
     });
 });
 
@@ -202,6 +202,7 @@ function calculateTotal() {
     checkOutPrice.innerHTML = `$${total}`;
 }
 
+// Calling the functions calculate total
 calculateTotal();
 
 
