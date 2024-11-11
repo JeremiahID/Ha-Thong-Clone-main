@@ -14,7 +14,7 @@ setInterval(changeBackground, 5000);
 
 
 
-// GET CART UI TAG
+// GET CART UI TAG  
 const Cart =  document.querySelector('#cart-menu');
 const cartContainer = document.querySelector('.cart-conatianer');
 const closeCart = document.querySelector('#close-cart');
