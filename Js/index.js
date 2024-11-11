@@ -158,6 +158,7 @@ function Favorite(svgElement){
 //selecting all cart items
 const cartItems = document.querySelectorAll('.cart-items'); 
 const checkOutPrice = document.getElementById('check-out-price');
+const checkOutSubTotal = document.getElementById('subTotal')
 
 //Looping throught each cart  items
 cartItems.forEach(item => {
@@ -165,10 +166,10 @@ cartItems.forEach(item => {
     const quantityElement = item.querySelector('.Qty');
     const addQuantity = item.querySelector('.add-qty');
     const subQuantity = item.querySelector('.sub-qty');
-    const closeCartItem= item.querySelector('.close-icon-x');
+    const closeCartItem = item.querySelector('.close-icon-x');
     const Price = item.querySelector('.price');
     let itemQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
-    let itemPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing quantity
+    let itemPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing price
 
     // Event listener for adding quantity
     addQuantity.addEventListener('click', () => {
@@ -177,6 +178,7 @@ cartItems.forEach(item => {
         itemPrice += 350;
         Price.innerHTML =` $${itemPrice}`;
         calculateTotal(); // Recalculate total after updating item quantity
+        calculateSubTotal(); //Recalculate total after updating item quantity
     });
 
     // Event listener for subtracting quantity
@@ -188,8 +190,17 @@ cartItems.forEach(item => {
         quantityElement.innerHTML = itemQty;
         Price.innerHTML =` $${itemPrice}`;
         calculateTotal(); // Recalculate total after updating item quantity
+        calculateSubTotal();
     });
+
+    closeCartItem.addEventListener('click', ()=>{
+        item.remove(); //
+        calculateTotal()//
+        calculateSubTotal();//
+    })
 });
+
+
 
 
 // Function to calculate the total price of all cart items
@@ -205,6 +216,20 @@ function calculateTotal() {
 
 // Calling the functions calculate total
 calculateTotal();
+
+// Function to calculate the total quantity of all cart items
+function calculateSubTotal(){
+    let subTotal = 0;
+    cartItems.forEach(item => {
+        const quantityElement = item.querySelector('.Qty');
+        let itemQty = parseInt(quantityElement.innerHTML) || 0; ;
+        subTotal += itemQty;
+    });
+    //  conditional check for items quantities using tenary
+    subTotal > 1? checkOutSubTotal.innerHTML = `(${subTotal} items)`:checkOutSubTotal.innerHTML = `(${subTotal} item)`
+}
+// Calling the functions calculate total qunatities
+calculateSubTotal();
 
 
 
