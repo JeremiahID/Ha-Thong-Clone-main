@@ -165,6 +165,7 @@ cartItems.forEach(item => {
     const quantityElement = item.querySelector('.Qty');
     const addQuantity = item.querySelector('.add-qty');
     const subQuantity = item.querySelector('.sub-qty');
+    const closeCartItem= item.querySelector('.close-icon-x');
     const Price = item.querySelector('.price');
     let itemQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
     let itemPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing quantity
