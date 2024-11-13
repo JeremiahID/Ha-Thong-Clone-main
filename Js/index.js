@@ -188,7 +188,7 @@ cartItems.forEach(item => {
         quantityElement.innerHTML = itemQty;
         Price.innerHTML =` $${itemPrice}`;
         calculateTotal(); // Recalculate total after updating item quantity
-        calculateSubTotal();
+        calculateSubTotal();  //Recalculate total after updating item quantity
     });
 
     closeCartItem.addEventListener('click', ()=>{
