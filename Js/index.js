@@ -145,7 +145,7 @@ function Favorite(svgElement){
     // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG USING TENEARY OPERATOR!
     svgElement.innerHTML = isSolid ? outline : solid;    
 
-    // SEETING THE FLAG TO TRUE / FALSE DEPENDING ON THE CURRENT STATE.
+    // SETTING THE FLAG TO TRUE / FALSE DEPENDING ON THE CURRENT STATE.
     isSolid = !isSolid;
 }
 
@@ -223,7 +223,7 @@ function calculateSubTotal(){
         let itemQty = parseInt(quantityElement.innerHTML) || 0; ;
         subTotal += itemQty;
     });
-    //  conditional check for items quantities using tenary
+    //  conditional check for items quantities using tenary operator
     subTotal > 1? checkOutSubTotal.innerHTML = `(${subTotal} items)`:checkOutSubTotal.innerHTML = `(${subTotal} item)`
 }
 // Calling the functions calculate total qunatities
