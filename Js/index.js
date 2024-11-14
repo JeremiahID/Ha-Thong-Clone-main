@@ -151,7 +151,7 @@ function Favorite(svgElement){
 
 
 
-//  ADD AND SUB IN QUANTITY
+                //  ADD AND SUB IN QUANTITY
 
 //selecting all cart items
 const cartItems = document.querySelectorAll('.cart-items'); 
