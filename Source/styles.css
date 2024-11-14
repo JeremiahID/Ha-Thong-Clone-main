@@ -581,9 +581,14 @@ a{
         height: 270vh;
     }
 
-    .favorite{
+    .svg{
         width: 8vw;
-        
+        height: 8vh;
+    
+    }
+
+    .favorite{
+        width: 7    vw;
     }
     .prefall-dress{
         height: 260vh;
