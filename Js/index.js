@@ -246,6 +246,7 @@ cartOutline = `<svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="n
 for(let i = 0; i < cartAddIcon.length; i++){
     cartAddIcon[i].addEventListener('click', ()=>{
         cartItemIcon(cartAddIcon[i]);
+        
     });
 };
 
@@ -259,10 +260,80 @@ for(let i = 0; i < cartAddIcon.length; i++){
 
 //FUNCTION TO CONDITIONALLY CHECK THROGH EACH SVG
 function cartItemIcon(cartElement){
+    // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG 
+    if(cartElement.innerHTML = isCartSolid){
+        cartElement.innerHTML = cartOutline;
+        removeItemFromCart();
+    } else {
+        cartElement.innerHTML = cartSolid;
+        addItemToCart();
+
+    }
     
     // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG USING TENEARY OPERATOR!
-        cartElement.innerHTML = isCartSolid ? cartOutline : cartSolid;
+        // cartElement.innerHTML = isCartSolid ? cartOutline : cartSolid;
 
     // SETTING THE FLAG TO TRUE / FALSE DEPENDING ON THE CURRENT STATE.
     isCartSolid = !isCartSolid;
+}
+
+// add an item from the cart function on toggling
+function addItemToCart(){
+    const cartContainer =  document.querySelector('.cart-content');
+    cartContainer.innerHTML = `
+                        <!-- Item One -->
+    <div class="cart-items d-flex justify-content-between align-items-center my-1 " >
+        <!-- image  -->
+        <div class=" cart-items-image">
+            <img src="./Images/menu-best-seller-one.jpeg" alt="" srcset="" class="cart-image-size">
+        </div>
+        <!-- image name and price -->
+        <div class="cart-items-name  d-flex justify-content-between align-items-start flex-column">
+            <div class="">
+                <p class="fw-light px-2 m-0 fs-6 "> Montec Blouse </p>
+                <p class="fs-8 px-2 fw-light"> Meduim </p>
+
+            </div>
+
+            <div class=" ">
+                <p class="price fs-8 px-2 m-0 price" > $0 </p>
+            </div>
+
+        </div>
+
+        <!-- item close and add/remove -->
+        <div class=" cart-items-icons border-2 flex flex-column ">
+
+            <!-- close items icon -->
+            <div class="close-icon position-relative ">
+                <svg class="items-icon-size close-icon-x " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                </svg>
+            </div>
+
+            <!-- quantity and add or remove -->
+            <div class="add-remove border border-black rounded-1">
+                <!-- remove -->
+                <svg  class="items-icon-size  m-0 sub-qty" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                </svg>
+
+                <!-- Quantity -->
+                    <p class="text-dark m-0 fs-8 Qty px-1" > 0 </p>
+                <!-- add -->
+                <svg class="items-icon-size add-qty"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+        </div>
+
+    </div>
+    
+    `
+}
+
+// remove an item from the cart function on toggling
+function removeItemFromCart(){
+    const cartContainer =  document.querySelector('.cart-content');
+    cartContainer.innerHTML = ``
 }
