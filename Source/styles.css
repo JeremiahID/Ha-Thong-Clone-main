@@ -64,6 +64,14 @@ a{
     justify-content: center;
 }
 
+.icon-cart{
+    width: 2vw;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
 
 /* this is the hero section */
 .hero{
