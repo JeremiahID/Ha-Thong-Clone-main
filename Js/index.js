@@ -280,7 +280,7 @@ function cartItemIcon(cartElement){
 // add an item from the cart function on toggling
 function addItemToCart(){
     const cartContainer =  document.querySelector('.cart-content');
-    cartContainer.innerHTML = `
+    cartContainer.innerHTML +=  `
                         <!-- Item One -->
     <div class="cart-items d-flex justify-content-between align-items-center my-1 " >
         <!-- image  -->
