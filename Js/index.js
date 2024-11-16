@@ -246,6 +246,7 @@ cartOutline = `<svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="n
 for(let i = 0; i < cartAddIcon.length; i++){
     cartAddIcon[i].addEventListener('click', ()=>{
         cartItemIcon(cartAddIcon[i]);
+  
         
     });
 };
@@ -333,7 +334,10 @@ function addItemToCart(){
 }
 
 // remove an item from the cart function on toggling
-function removeItemFromCart(){
+function removeItemFromCart(itemIndex){
     const cartContainer =  document.querySelector('.cart-content');
-    cartContainer.innerHTML = ``
+    if (cartContainer[itemIndex]) {
+        cartContainer[itemIndex].remove();
+        console.log('test')
+    }
 }
