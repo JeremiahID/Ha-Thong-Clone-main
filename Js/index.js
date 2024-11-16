@@ -243,20 +243,12 @@ cartOutline = `<svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="n
                 </svg>`
 
 // looping through each conatainer
-for(let i = 0; i < cartAddIcon.length; i++){
-    cartAddIcon[i].addEventListener('click', ()=>{
-        cartItemIcon(cartAddIcon[i]);
-  
-        
-    });
-};
-
-// cartAddIcon.forEach(addicon =>{
-//     const me = addicon.querySelector('#icon-cart-test');
-//     me.addEventListener('click' , ()=>{
-//         cartItemIcon(me);
-//     })
-// });
+cartAddIcon.forEach(addicon =>{
+    const me = addicon.querySelector('#icon-cart-test');
+    me.addEventListener('click' , ()=>{
+        cartItemIcon(me);
+    })
+});
 
 
 //FUNCTION TO CONDITIONALLY CHECK THROGH EACH SVG
@@ -264,24 +256,23 @@ function cartItemIcon(cartElement){
     // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG 
     if(cartElement.innerHTML = isCartSolid){
         cartElement.innerHTML = cartOutline;
-        removeItemFromCart();
+        // removeItemFromCart();
     } else {
         cartElement.innerHTML = cartSolid;
         addItemToCart();
 
     }
-    
-    // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG USING TENEARY OPERATOR!
-        // cartElement.innerHTML = isCartSolid ? cartOutline : cartSolid;
 
     // SETTING THE FLAG TO TRUE / FALSE DEPENDING ON THE CURRENT STATE.
     isCartSolid = !isCartSolid;
 }
 
-// add an item from the cart function on toggling
+// fucntion to add and remove an item from the cart
+var newCartItem;
+// = document.createElement('div');
+
 function addItemToCart(){
-    const cartContainer =  document.querySelector('.cart-content');
-    cartContainer.innerHTML +=  `
+    newCartItem =  `
                         <!-- Item One -->
     <div class="cart-items d-flex justify-content-between align-items-center my-1 " >
         <!-- image  -->
@@ -328,16 +319,13 @@ function addItemToCart(){
             </div>
         </div>
 
-    </div>
-    
-    `
+    </div>`
+    var cartCon = document.querySelector('.cart-content')
+    cartCon.innerHTML += newCartItem;
 }
 
-// remove an item from the cart function on toggling
-function removeItemFromCart(itemIndex){
-    const cartContainer =  document.querySelector('.cart-content');
-    if (cartContainer[itemIndex]) {
-        cartContainer[itemIndex].remove();
-        console.log('test')
-    }
-}
+// remove function
+// function removeItemFromCart(){
+//         document.querySelector('.cart-content').remove(newCartItem);
+
+// }
