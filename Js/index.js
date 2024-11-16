@@ -274,7 +274,7 @@ var newCartItem;
 var cartContent = document.querySelector('.cart-content');
 
 // add function
-function addItemToCart(){
+function addItemToCart(newCartItem){
     newCartItem =  `
                         <!-- Item One -->
     <div class="cart-items d-flex justify-content-between align-items-center my-1 " >
@@ -329,5 +329,5 @@ function addItemToCart(){
 // remove function
 function removeItemFromCart(){
     newCartItem =  ``;
-    cartContent.innerHTML;
+    cartContent.innerHTML.re;
 }
