@@ -256,7 +256,7 @@ function cartItemIcon(cartElement){
     // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG 
     if(cartElement.innerHTML = isCartSolid){
         cartElement.innerHTML = cartOutline;
-        // removeItemFromCart();
+        removeItemFromCart();
     } else {
         cartElement.innerHTML = cartSolid;
         addItemToCart();
@@ -269,8 +269,9 @@ function cartItemIcon(cartElement){
 
 // fucntion to add and remove an item from the cart
 var newCartItem;
-// = document.createElement('div');
+var cartCon = document.querySelector('.cart-content');
 
+// add function
 function addItemToCart(){
     newCartItem =  `
                         <!-- Item One -->
@@ -320,12 +321,11 @@ function addItemToCart(){
         </div>
 
     </div>`
-    var cartCon = document.querySelector('.cart-content')
     cartCon.innerHTML += newCartItem;
 }
 
 // remove function
-// function removeItemFromCart(){
-//         document.querySelector('.cart-content').remove(newCartItem);
+function removeItemFromCart(){
+        newCartItem.remove;
 
-// }
+}
