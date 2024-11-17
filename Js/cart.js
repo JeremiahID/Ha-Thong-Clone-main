@@ -30,6 +30,7 @@ function cartItemIcon(cartElement){
     // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG 
     if(cartElement.innerHTML = isCartSolid){
         cartElement.innerHTML = cartOutline;
+        removeItemFromCart();
 
     } else {
         cartElement.innerHTML = cartSolid;
@@ -100,7 +101,13 @@ function addItemToCart(newCartItem){
 
 }
 // remove function
-
+// function removeItemFromCart(){
+//     const cartItem = document.querySelectorAll('.cart-items'); //selecting all cart items
+//     cartItem.forEach(items =>{
+//         const iconClick = addicon.querySelector('#icon-cart-test');
+//         if(iconClick.innerHTML = )
+//     })
+// }
 
 // all events that occurs on the items in the cart menu
 function cartEvents(){
@@ -144,9 +151,12 @@ function cartEvents(){
     
         // deleting cart in cart
         closeCartItem.addEventListener('click', ()=>{
-            item.remove(); //
-            calculateTotal()//
-            calculateSubTotal();//
+            if(!item.remove()){
+
+            } else{
+                calculateTotal(); //
+                calculateSubTotal(); //
+            }
         })
     });
 
@@ -159,7 +169,9 @@ function cartEvents(){
             total += itemPrice;
         });
         checkOutPrice.innerHTML = `$${total}`;
+        console.log('works')
         }
+        
     // Calling the functions calculate total
      calculateTotal();
 
