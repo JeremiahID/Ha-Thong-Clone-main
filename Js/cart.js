@@ -169,8 +169,7 @@ function cartEvents(){
             total += itemPrice;
         });
         checkOutPrice.innerHTML = `$${total}`;
-        console.log('works')
-        }
+    }
         
     // Calling the functions calculate total
      calculateTotal();
