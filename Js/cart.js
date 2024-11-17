@@ -17,7 +17,7 @@ function solidOutlineChange(){
     // looping through each conatainer
     cartAddIcon.forEach(addicon =>{
         const me = addicon.querySelector('#icon-cart-test');
-        me.addEventListener('click' , (event)=>{
+        me.addEventListener('click', ()=>{
             cartItemIcon(me);
         })
     });
@@ -30,11 +30,11 @@ function cartItemIcon(cartElement){
     // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG 
     if(cartElement.innerHTML = isCartSolid){
         cartElement.innerHTML = cartOutline;
-        attachRemoveListeners();
 
     } else {
         cartElement.innerHTML = cartSolid;
         addItemToCart();
+        
     }
 
     // SETTING THE FLAG TO TRUE / FALSE DEPENDING ON THE CURRENT STATE.
@@ -96,85 +96,89 @@ function addItemToCart(newCartItem){
 
     </div>`;
     cartContent.innerHTML += newCartItem;
-    
     cartEvents();
 
 }
 // remove function
 
 
-// Event listener for adding quantity
-const cartItems = document.querySelectorAll('.cart-items'); //selecting all cart items
-const checkOutPrice = document.getElementById('check-out-price'); //selecting cart items price
-const checkOutSubTotal = document.getElementById('subTotal'); //selecting cart items subtotal
-//  events listener for the various event in the cart items
+// all events that occurs on the items in the cart menu
 function cartEvents(){
-  cartItems.forEach(item => {
-      // Get the quantity element, add button, and subtract button for each item
-      const quantityElement = item.querySelector('.Qty');
-      const addQuantity = item.querySelector('.add-qty');
-      const subQuantity = item.querySelector('.sub-qty');
-      const closeCartItem = item.querySelector('.close-icon-x');
-      const Price = item.querySelector('.price');
-      let itemQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
-      let itemPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing price
-  
-      // Event listener for adding quantity
-      addQuantity.addEventListener('click', () => {
-          itemQty += 1;
-          quantityElement.innerHTML = itemQty;
-          itemPrice += 350;
-          Price.innerHTML =` $${itemPrice}`;
-          calculateTotal(); // Recalculate total after updating item quantity
-          calculateSubTotal(); //Recalculate total after updating item quantity
-      });
-  
-      // Event listener for subtracting quantity
-      subQuantity.addEventListener('click', () => {
-          if (itemQty > 0) {
-              itemQty -= 1;
-              itemPrice -= 350;
-          }
-          quantityElement.innerHTML = itemQty;
-          Price.innerHTML =` $${itemPrice}`;
-          calculateTotal(); // Recalculate total after updating item quantity
-          calculateSubTotal();  //Recalculate total after updating item quantity
-      });
-  
-      // deleting cart in cart
-      closeCartItem.addEventListener('click', ()=>{
-          item.remove(); //
-          calculateTotal()//
-          calculateSubTotal();//
-      })
-  });
+    // Event listener for adding quantity
+    const cartItems = document.querySelectorAll('.cart-items'); //selecting all cart items
+    const checkOutPrice = document.getElementById('check-out-price'); //selecting cart items price
+    const checkOutSubTotal = document.getElementById('subTotal'); //selecting cart items subtotal
+    //  events listener for the various event in the cart items
+
+    cartItems.forEach(item => {
+        // Get the quantity element, add button, and subtract button for each item
+        const quantityElement = item.querySelector('.Qty');
+        const addQuantity = item.querySelector('.add-qty');
+        const subQuantity = item.querySelector('.sub-qty');
+        const closeCartItem = item.querySelector('.close-icon-x');
+        const Price = item.querySelector('.price');
+        let itemQty = parseInt(quantityElement.innerHTML) || 0; // Initialize with existing quantity
+        let itemPrice = parseInt(Price.innerHTML) || 0; // Initialize with existing price
+    
+        // Event listener for adding quantity
+        addQuantity.addEventListener('click', () => {
+            itemQty += 1;
+            quantityElement.innerHTML = itemQty;
+            itemPrice += 350;
+            Price.innerHTML =` $${itemPrice}`;
+            calculateTotal(); // Recalculate total after updating item quantity
+            calculateSubTotal(); //Recalculate total after updating item quantity
+        });
+    
+        // Event listener for subtracting quantity
+        subQuantity.addEventListener('click', () => {
+            if (itemQty > 0) {
+                itemQty -= 1;
+                itemPrice -= 350;
+            }
+            quantityElement.innerHTML = itemQty;
+            Price.innerHTML =` $${itemPrice}`;
+            calculateTotal(); // Recalculate total after updating item quantity
+            calculateSubTotal();  //Recalculate total after updating item quantity
+        });
+    
+        // deleting cart in cart
+        closeCartItem.addEventListener('click', ()=>{
+            item.remove(); //
+            calculateTotal()//
+            calculateSubTotal();//
+        })
+    });
+
+    // Function to calculate the total price of all cart items
+    function calculateTotal() {
+        let total = 0;
+        cartItems.forEach(item => {
+            const Price = item.querySelector('.price');
+            let itemPrice = parseInt(Price.innerHTML.replace('$', '')) || 0;
+            total += itemPrice;
+        });
+        checkOutPrice.innerHTML = `$${total}`;
+        }
+    // Calling the functions calculate total
+     calculateTotal();
+
+    // Function to calculate the total quantity of all cart items
+    function calculateSubTotal(){
+        let subTotal = 0;
+        cartItems.forEach(item => {
+            const quantityElement = item.querySelector('.Qty');
+            let itemQty = parseInt(quantityElement.innerHTML) || 0; ;
+            subTotal += itemQty;
+        });
+        //  conditional check for items quantities using tenary operator
+        subTotal > 1? checkOutSubTotal.innerHTML = `(${subTotal} items)`:checkOutSubTotal.innerHTML = `(${subTotal} item)`
+    }
+    // Calling the functions calculate total qunatities
+    calculateSubTotal();
+
+
 }
 // calling the function cart events
 cartEvents();
 
-// Function to calculate the total price of all cart items
-function calculateTotal() {
-    let total = 0;
-    cartItems.forEach(item => {
-        const Price = item.querySelector('.price');
-        let itemPrice = parseInt(Price.innerHTML.replace('$', '')) || 0;
-        total += itemPrice;
-    });
-    checkOutPrice.innerHTML = `$${total}`;
-}
-// Calling the functions calculate total
-calculateTotal();
-
-// Function to calculate the total quantity of all cart items
-function calculateSubTotal(){
-    let subTotal = 0;
-    cartItems.forEach(item => {
-        const quantityElement = item.querySelector('.Qty');
-        let itemQty = parseInt(quantityElement.innerHTML) || 0; ;
-        subTotal += itemQty;
-    });
-    //  conditional check for items quantities using tenary operator
-    subTotal > 1? checkOutSubTotal.innerHTML = `(${subTotal} items)`:checkOutSubTotal.innerHTML = `(${subTotal} item)`
-}
-// Calling the functions calculate total qunatities
-calculateSubTotal();
