@@ -153,7 +153,8 @@ function cartEvents(){
     
         // deleting cart in cart
         closeCartItem.addEventListener('click', ()=>{
-            removeItemFromCart(closeCartItem);         
+            // removeItemFromCart(closeCartItem);  
+            item.remove();       
             
         });
 
@@ -168,11 +169,9 @@ function cartEvents(){
             total += itemPrice;
         });
         checkOutPrice.innerHTML = `$${total}`;
-    }
-        
+    }   
     // Calling the functions calculate total
      calculateTotal();
-
     // Function to calculate the total quantity of all cart items
     function calculateSubTotal(){
         let subTotal = 0;
@@ -186,7 +185,6 @@ function cartEvents(){
     }
     // Calling the functions calculate total qunatities
     calculateSubTotal();
-    addItemToCart();
 
 
 }
