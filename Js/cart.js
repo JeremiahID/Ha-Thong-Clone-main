@@ -30,7 +30,7 @@ function cartItemIcon(cartElement){
     // CONDTIONAL STATEMENT TO TOGGLE THE STATE OF THE FLAG 
     if(cartElement.innerHTML = isCartSolid){
         cartElement.innerHTML = cartOutline;
-        removeItemFromCart();
+        removeItemFromCart(cartElement);
 
     } else {
         cartElement.innerHTML = cartSolid;
@@ -100,14 +100,16 @@ function addItemToCart(newCartItem){
     cartEvents();
 
 }
+
 // remove function
-// function removeItemFromCart(){
-//     const cartItem = document.querySelectorAll('.cart-items'); //selecting all cart items
-//     cartItem.forEach(items =>{
-//         const iconClick = addicon.querySelector('#icon-cart-test');
-//         if(iconClick.innerHTML = )
-//     })
-// }
+function removeItemFromCart(cartElement) {
+    // Find the parent `.cart-items` container of the clicked close button
+    const cartItem = cartElement.closest('.cart-items');
+    if (cartItem) {
+        cartItem.remove(); // Remove the specific cart item from the DOM
+    }
+
+}
 
 // all events that occurs on the items in the cart menu
 function cartEvents(){
@@ -151,13 +153,12 @@ function cartEvents(){
     
         // deleting cart in cart
         closeCartItem.addEventListener('click', ()=>{
-            if(!item.remove()){
+            removeItemFromCart(closeCartItem);
+            
+        });
 
-            } else{
-                calculateTotal(); //
-                calculateSubTotal(); //
-            }
-        })
+        calculateTotal(); //
+        calculateSubTotal(); //
     });
 
     // Function to calculate the total price of all cart items
