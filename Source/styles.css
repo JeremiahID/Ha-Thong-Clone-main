@@ -497,7 +497,11 @@ a{
 /* COLLECTIONS PAGE STYLING */
 
 .collection-best-seller-one {
-    background-image: url('../Images/menu-frame-one-model.jpg');
+    background-image: url('../Images/collection/collection-best-seller-one.jpg');
+}
+
+.collection-best-seller-one:hover {
+    background-image: url('../Images/collection/collection-best-seller-one-model.jpg');
 }
 
 
