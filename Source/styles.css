@@ -496,9 +496,9 @@ a{
 
 /* COLLECTIONS PAGE STYLING */
 
-/* .collection-header{
-    height: 15vh;
-} */
+.collection-best-seller-one {
+    background-image: url('../Images/menu-frame-one-model.jpg');
+}
 
 
 /* FOOTER */
