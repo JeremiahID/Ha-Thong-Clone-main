@@ -99,7 +99,7 @@ function addItemToCart(newCartItem){
     cartContent.innerHTML += newCartItem;
     cartEvents();
 
-}
+};
 
 // remove function
 function removeItemFromCart(cartElement) {
@@ -107,9 +107,9 @@ function removeItemFromCart(cartElement) {
     const cartItem = cartElement.closest('.cart-items');
     if (cartItem) {
         cartItem.remove(); // Remove the specific cart item from the DOM
-    }
+    };
+};
 
-}
 
 // all events that occurs on the items in the cart menu
 function cartEvents(){
@@ -153,12 +153,10 @@ function cartEvents(){
     
         // deleting cart in cart
         closeCartItem.addEventListener('click', ()=>{
-            removeItemFromCart(closeCartItem);
+            removeItemFromCart(closeCartItem);         
             
         });
 
-        calculateTotal(); //
-        calculateSubTotal(); //
     });
 
     // Function to calculate the total price of all cart items
@@ -188,6 +186,7 @@ function cartEvents(){
     }
     // Calling the functions calculate total qunatities
     calculateSubTotal();
+    addItemToCart();
 
 
 }
