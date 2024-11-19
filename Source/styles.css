@@ -504,6 +504,33 @@ a{
     background-image: url('../Images/collection/collection-best-seller-one-model.jpg');
 }
 
+/* collection best seller two */
+.collection-best-seller-two {
+    background-image: url('../Images/collection/collection-best-seller-two.jpg');
+}
+
+.collection-best-seller-two:hover {
+    background-image: url('../Images/collection/collection-best-seller-two-model.jpg');
+}
+
+/* collection best seller three */
+.collection-best-seller-three {
+    background-image: url('../Images/collection/collection-best-seller-three.jpg');
+}
+
+.collection-best-seller-three:hover {
+    background-image: url('../Images/collection/collection-best-seller-three-model.jpg');
+}
+
+/* collection best seller four */
+.collection-best-seller-four {
+    background-image: url('../Images/collection/collection-best-seller-four.jpg');
+}
+
+.collection-best-seller-four:hover {
+    background-image: url('../Images/collection/collection-best-seller-four-model.jpg');
+}
+
 
 /* FOOTER */
 .footer{
