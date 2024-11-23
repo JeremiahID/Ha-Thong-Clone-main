@@ -531,6 +531,41 @@ a{
     background-image: url('../Images/collection/collection-best-seller-four-model.jpg');
 }
 
+/* collection best seller five */
+.collection-best-seller-five {
+    background-image: url('../Images/collection/infinite-collection-1-model.jpeg');
+}
+
+.collection-best-seller-five:hover {
+    background-image: url('../Images/collection/infinite-collection-1.jpeg');
+}
+
+/* collection best seller six */
+.collection-best-seller-six {
+    background-image: url('../Images/collection/infinite-collection-2-model.jpeg');
+}
+
+.collection-best-seller-six:hover {
+    background-image: url('../Images/collection/infinite-collection-2.jpeg');
+}
+
+/* collection best seller seven */
+.collection-best-seller-seven {
+    background-image: url('../Images/collection/infinite-collection-1-model.jpeg');
+}
+
+.collection-best-seller-seven:hover {
+    background-image: url('../Images/collection/infinite-collection-1.jpeg');
+}
+
+/* collection best seller six */
+.collection-best-seller-six {
+    background-image: url('../Images/collection/infinite-collection-2-model.jpeg');
+}
+
+.collection-best-seller-six:hover {
+    background-image: url('../Images/collection/infinite-collection-2.jpeg');
+}
 
 
 /* FOOTER */
