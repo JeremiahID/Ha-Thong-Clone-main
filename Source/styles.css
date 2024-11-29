@@ -575,40 +575,40 @@ a{
 
                 /* ROW THREE */
 
-/* collection best seller five */
-.collection-best-seller-five {
-    background-image: url('../Images/collection/infinite-collection-1-model.jpeg');
+/* collection best seller nine */
+.collection-best-seller-nine {
+    background-image: url('../Images/collection/infinite-collection-5-model.jpeg');
 }
 
-.collection-best-seller-five:hover {
-    background-image: url('../Images/collection/infinite-collection-1.jpeg');
+.collection-best-seller-nine:hover {
+    background-image: url('../Images/collection/infinite-collection-5.jpeg');
 }
 
-/* collection best seller six */
-.collection-best-seller-six {
-    background-image: url('../Images/collection/infinite-collection-2-model.jpeg');
+/* collection best seller ten */
+.collection-best-seller-ten {
+    background-image: url('../Images/collection/infinite-collection-7.jpeg');
 }
 
-.collection-best-seller-six:hover {
-    background-image: url('../Images/collection/infinite-collection-2.jpeg');
+.collection-best-seller-ten:hover {
+    background-image: url('../Images/collection/infinite-collection-7-model.jpeg');
 }
 
-/* collection best seller seven */
-.collection-best-seller-seven {
-    background-image: url('../Images/collection/infinite-collection-3-model.jpeg');
+/* collection best seller eleven */
+.collection-best-seller-eleven {
+    background-image: url('../Images/collection/infinite-collection-6-model.jpeg');
 }
 
-.collection-best-seller-seven:hover {
-    background-image: url('../Images/collection/infinite-collection-3.jpeg');
+.collection-best-seller-eleven:hover {
+    background-image: url('../Images/collection/infinite-collection-6.jpeg');
 }
 
-/* collection best seller eight */
-.collection-best-seller-eight {
-    background-image: url('../Images/collection/infinite-collection-4-model.jpeg');
+/* collection best seller twelve */
+.collection-best-seller-twelve {
+    background-image: url('../Images/collection/infinite-collection-8.jpeg');
 }
 
-.collection-best-seller-eight:hover {
-    background-image: url('../Images/collection/infinite-collection-4.jpeg');
+.collection-best-seller-twelve:hover {
+    background-image: url('../Images/collection/infinite-collection-8-model.jpeg');
 }
 
 
