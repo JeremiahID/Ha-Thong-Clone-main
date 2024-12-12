@@ -27,6 +27,8 @@ Cart.addEventListener('click', ()=>{
     if(cartContainer.style.display = 'block'){
         cartContainer.classList.remove('hide-cart');
         cartContainer.classList.add('show-cart');
+        document.body.classList.add('no-scroll'); 
+
     
     } 
 })
@@ -35,6 +37,7 @@ closeCart.addEventListener('click', ()=>{
     if(cartContainer.style.display = 'block'){
         cartContainer.classList.remove('show-cart');
         cartContainer.classList.add('hide-cart');
+        document.body.classList.remove('no-scroll'); 
     } 
 })
 

@@ -18,6 +18,10 @@
     border-radius: 10px;
 }
 
+body .no-scroll {
+    overflow: hidden; 
+}
+
 
 /* PREDEFINE STYLING */
 
