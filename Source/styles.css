@@ -1,6 +1,5 @@
 /* DEFAULT STYLING */
 *{
-    overflow-x: hidden;
     transition: all .5s ease 0s;
 } 
 
@@ -19,12 +18,11 @@
 }
 
 .no-scroll {
-    overflow: hidden; 
+    overflow: hidden;
     background-color: #151515;
-    display: none;
-    
-}
+    /* display: none;   */
 
+}
 
 /* PREDEFINE STYLING */
 
