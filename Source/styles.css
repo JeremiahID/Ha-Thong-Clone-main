@@ -146,7 +146,7 @@ a{
     font-family: Candara;
 }
 .nav-link-active{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.568);
     color: #e0e0e0;
     font-family: Candara;
 }
