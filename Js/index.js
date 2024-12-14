@@ -55,7 +55,6 @@ window.addEventListener('scroll', function() {
 });
 
 
-
 // GETTING THE HAMBURGER and NAVIGATIONS UI
 const hambuger = document.querySelector('#hambuger-menu');
 const Nav = document.querySelector('.navigations');
