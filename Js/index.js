@@ -73,7 +73,6 @@ hambuger.addEventListener('click', ()=>{
         Nav.classList.remove('hide-nav');
         Nav.classList.add('show-nav'); 
     } 
-
 });
 
 // ADDING EVENT LISTENER TO THE NAVIGATION UI
