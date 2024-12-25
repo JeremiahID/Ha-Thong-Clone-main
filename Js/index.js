@@ -87,7 +87,6 @@ CloseNav.addEventListener('click', ()=>{
 });
 
 
-
 // VALIDATING THE USER EMAIL
 function validateEmail(email) {
     // Regular expression for basic email validation
