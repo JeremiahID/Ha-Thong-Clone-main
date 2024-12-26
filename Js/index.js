@@ -112,8 +112,7 @@ Subscribe.addEventListener('click', ()=>{
             
         }
 
-    } 
-
+    };
 });
 
 
