@@ -110,7 +110,7 @@ Subscribe.addEventListener('click', ()=>{
         } else {
             alert("Invalid email");
             
-        }
+        };
 
     };
 });
