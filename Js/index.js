@@ -17,8 +17,6 @@ setInterval(changeBackground, 5000);
 const Cart =  document.querySelector('#cart-menu');
 const cartContainer = document.querySelector('.cart-container');
 const closeCart = document.querySelector('#close-cart');
-// const Empty_cart = document.querySelector('.cart-empty');
-// const cartContent = document.querySelector('.cart-content');
 
 
 

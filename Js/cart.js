@@ -106,12 +106,12 @@ function addItemToCart(newCartItem){
 
 //hiding the cart menu on laod
 window.addEventListener('load', function(){
-    // if(cart_content_wrapper.innerHTML === ''){
-    //     Empty_cart.style.display = "block";
-    // } 
-    // else{
-    //     Empty_cart.style.display = "none";
-    // }
+    if(cart_content_wrapper.innerHTML === ''){
+        Empty_cart.style.display = "block";
+    } 
+    else{
+        Empty_cart.style.display = "none";
+    }
 
     console.log('TEST')
 
