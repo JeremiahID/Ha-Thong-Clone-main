@@ -40,9 +40,6 @@ Cart.addEventListener('click', ()=>{
     if(cartContainer.style.display = 'block'){
         cartContainer.classList.remove('hide-cart');
         cartContainer.classList.add('show-cart');
-        document.body.classList.add('no-scroll'); 
-
-    
     } 
 })
 
