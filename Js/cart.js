@@ -178,8 +178,10 @@ function cartEvents(){
         });
         checkOutPrice.innerHTML = `$${total}`;
     }   
+
     // Calling the functions calculate total
      calculateTotal();
+
     // Function to calculate the total quantity of all cart items
     function calculateSubTotal(){
         let subTotal = 0;
@@ -191,6 +193,7 @@ function cartEvents(){
         //  conditional check for items quantities using tenary operator
         subTotal > 1? checkOutSubTotal.innerHTML = `(${subTotal} items)`:checkOutSubTotal.innerHTML = `(${subTotal} item)`
     }
+    
     // Calling the functions calculate total qunatities
     calculateSubTotal();
 
