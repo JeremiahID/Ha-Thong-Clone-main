@@ -15,12 +15,25 @@ setInterval(changeBackground, 5000);
 
 // GET CART UI TAG  
 const Cart =  document.querySelector('#cart-menu');
-const cartContainer = document.querySelector('.cart-conatianer');
+const cartContainer = document.querySelector('.cart-container');
 const closeCart = document.querySelector('#close-cart');
+const Empty_cart = document.querySelector('.cart-empty');
+
+var cartContent = document.querySelector('.cart-content');
+
+
 
 //hiding the cart menu on laod
 window.addEventListener('load', function(){
     cartContainer.classList.add('hide-cart');
+
+    if(cartContent.innerHTML === ''){
+        Empty_cart.style.display = "block";
+    } 
+    else{
+        Empty_cart.style.display = "none";
+    }
+
 
 });
 

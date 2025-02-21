@@ -45,7 +45,6 @@ function cartItemIcon(cartElement){
 // fucntion to add and remove an item from the cart from the main page by clicking the cart icon
 var newCartItem;
 var cartContent = document.querySelector('.cart-content');
-const Empty_cart = document.querySelector('.cart-empty')
 // add function
 function addItemToCart(newCartItem){
     newCartItem =  `
