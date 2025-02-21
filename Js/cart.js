@@ -96,16 +96,8 @@ function addItemToCart(newCartItem){
         </div>
 
     </div>`;
-    if(cartContent.innerHTML === ''){
-        Empty_cart.style.display = "block";
-    } 
-    else{
-        Empty_cart.style.display = "none";
-    }
-
-
     cartContent.innerHTML += newCartItem;
-    
+
     cartEvents();
 
 };
@@ -193,7 +185,7 @@ function cartEvents(){
         //  conditional check for items quantities using tenary operator
         subTotal > 1? checkOutSubTotal.innerHTML = `(${subTotal} items)`:checkOutSubTotal.innerHTML = `(${subTotal} item)`
     }
-    
+
     // Calling the functions calculate total qunatities
     calculateSubTotal();
 
