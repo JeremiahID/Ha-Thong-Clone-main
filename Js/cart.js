@@ -1,4 +1,4 @@
-``
+
 // cart icon change from outline to solid on click
 var cartSolid, cartOutline, isCartSolid;// variable declaration
 function solidOutlineChange(){
