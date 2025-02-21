@@ -167,7 +167,7 @@ a{
 
 /* empty cart display message */
 .cart-empty{
-    display: none;
+    /* display: none; */
     color: #35353560;
     position: absolute;
     top: 50%;
