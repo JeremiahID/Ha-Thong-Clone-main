@@ -14,7 +14,7 @@ function solidOutlineChange(){
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                     </svg>`
 
-    // looping through each conatainer
+    // looping through each container
     cartAddIcon.forEach(addicon =>{
         const me = addicon.querySelector('#icon-cart-test');
         me.addEventListener('click', ()=>{
@@ -45,7 +45,7 @@ function cartItemIcon(cartElement){
 // fucntion to add and remove an item from the cart from the main page by clicking the cart icon
 var newCartItem;
 var cartContent = document.querySelector('.cart-content');
-
+const Empty_cart = document.querySelector('.cart-empty')
 // add function
 function addItemToCart(newCartItem){
     newCartItem =  `
@@ -96,7 +96,16 @@ function addItemToCart(newCartItem){
         </div>
 
     </div>`;
+    if(cartContent.innerHTML === ''){
+        Empty_cart.style.display = "block";
+    } 
+    else{
+        Empty_cart.style.display = "none";
+    }
+
+
     cartContent.innerHTML += newCartItem;
+    
     cartEvents();
 
 };
@@ -109,7 +118,6 @@ function removeItemFromCart(cartElement) {
         cartItem.remove(); // Remove the specific cart item from the DOM
     };
 };
-
 
 // all events that occurs on the items in the cart menu
 function cartEvents(){
