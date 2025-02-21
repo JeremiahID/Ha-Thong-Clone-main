@@ -45,6 +45,7 @@ function cartItemIcon(cartElement){
 // fucntion to add and remove an item from the cart from the main page by clicking the cart icon
 var newCartItem;
 var cartContent = document.querySelector('.cart-content');
+const cart_content_wrapper = document.querySelector('.cart-content-wrapper')
 const Empty_cart = document.querySelector('.cart-empty')
 // add function
 function addItemToCart(newCartItem){
@@ -105,13 +106,12 @@ function addItemToCart(newCartItem){
 
 //hiding the cart menu on laod
 window.addEventListener('load', function(){
-
-    if(cartContent.innerHTML == ''){
-        Empty_cart.style.display = "block";
-    } 
-    else{
-        Empty_cart.style.display = "none";
-    }
+    // if(cart_content_wrapper.innerHTML === ''){
+    //     Empty_cart.style.display = "block";
+    // } 
+    // else{
+    //     Empty_cart.style.display = "none";
+    // }
 
     console.log('TEST')
 

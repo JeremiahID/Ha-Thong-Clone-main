@@ -165,6 +165,12 @@ a{
     
 }
 
+/* empty cart display message */
+.cart-empty{
+    /* display: none; */
+    color: #35353560;
+}
+
 /* cart container */
 .cart-container{
     width: 30vw;
