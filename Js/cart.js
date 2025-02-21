@@ -106,7 +106,6 @@ function addItemToCart(newCartItem){
 //hiding the cart menu on laod
 window.addEventListener('load', function(){
     
-
     if(cartContent.innerHTML === ''){
         Empty_cart.style.display = "block";
     } 
