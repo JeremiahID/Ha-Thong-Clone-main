@@ -105,13 +105,15 @@ function addItemToCart(newCartItem){
 
 //hiding the cart menu on laod
 window.addEventListener('load', function(){
-    
-    if(cartContent.innerHTML === ''){
+
+    if(cartContent.innerHTML == ''){
         Empty_cart.style.display = "block";
     } 
     else{
         Empty_cart.style.display = "none";
     }
+
+    console.log('TEST')
 
 
 });

@@ -24,15 +24,7 @@ const closeCart = document.querySelector('#close-cart');
 
 //hiding the cart menu on laod
 window.addEventListener('load', function(){
-    cartContainer.classList.add('hide-cart');
-
-    if(cartContent.innerHTML === ''){
-        Empty_cart.style.display = "block";
-    } 
-    else{
-        Empty_cart.style.display = "none";
-    }
-
+    cartContainer.classList.add('hide-cart')
 
 });
 
