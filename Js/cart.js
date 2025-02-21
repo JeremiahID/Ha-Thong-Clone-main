@@ -98,7 +98,6 @@ function addItemToCart(newCartItem){
     cartContent.innerHTML += newCartItem;
 
     cartEvents();
-
 };
 
 // remove function
