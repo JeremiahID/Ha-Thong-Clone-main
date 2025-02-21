@@ -21,6 +21,7 @@ const closeCart = document.querySelector('#close-cart');
 //hiding the cart menu on laod
 window.addEventListener('load', function(){
     cartContainer.classList.add('hide-cart');
+
 });
 
 Cart.addEventListener('click', ()=>{
